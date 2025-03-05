@@ -1,0 +1,116 @@
+:root {
+  --darkblue: #1D3557;
+  --oceanblue: #457B9D;
+  --midblue: #a8dadc;
+  --lightblue: #f1faee;
+  --lightgrey: #f1f1f1;
+  --red: #e63946;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hrv-input-form {
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 7px 7px 5px var(--lightgrey);
+    padding: 1em;
+}
+
+.input-measurement-entry{
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.input-measurement-entry div {
+    min-width: 150px;
+    width: 20%;
+    max-width: 300px;
+}
+
+.hrv-m-table {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.hrv-m-table th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.hrv-m-table td {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0.5em;
+    /*padding-right: 1em;*/
+}
+
+.hrv-m-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.hrv-m-table .check, .hrv-m-table .delete-m {
+    border: none;
+    background-color: var(--oceanblue);
+    color: var(--lightblue);
+    width: 90%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    max-width: 150px;
+    transition: 0.3s;
+}
+
+.hrv-m-table .check:hover, .hrv-m-table .delete-m:hover {
+    background-color: var(--darkblue);
+}
+
+.hrv-m-table .delete-m {
+    background-color: var(--red);
+}
+
+/* --- INPUT MEASUREMENT FORM BUTTON --- */
+
+.create-m {
+    background-color: var(--midblue);
+    color: var(--darkgrey);
+    border: none;
+    transition: 0.3s;
+}
+
+.create-m:hover {
+    background-color: var(--darkblue);
+    color: var(--lightblue);
+}
+#diary-box {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; 
+  margin-top: 100px; 
+  left: 20vh;
+  top: 0;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 7px 7px 5px var(--lightgrey);
+  /*width: 100%;
+  height: 100%;*/
+}
+
+#diary-box button{
+    width: 60%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+#diary-box h2 {
+    margin: 0;
+}
+
+#diary-box p {
+    margin: 0;
+}

@@ -1,0 +1,198 @@
+:root {
+  --darkblue: #1D3557;
+  --oceanblue: #457B9D;
+  --midblue: #a8dadc;
+  --lightblue: #f1faee;
+  --lightgrey: #f1f1f1;
+  --red: #e63946;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#app {
+    color: black;
+    font-weight: 700;
+}
+
+header h2 {
+    margin-bottom: 0;
+}
+
+.mobnav {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger div {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+.laptop-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.laptop-nav ul {
+    list-style-type: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.laptop-nav li {
+    float: left;
+    border-right:1px solid #bbb;
+    padding: 1em;
+    width: 145px;
+  }
+  
+.laptop-nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+  }
+
+.laptop-nav li a:hover {
+    color: var(--red);
+}
+
+/* --- MAIN --- */
+
+main {
+    height: auto;
+    min-height: 80vh;
+}
+
+.frontpage-intro-box {
+    padding: 1em;
+    width: 60%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+}
+
+.frontpage-intro-box h1 {
+    font-weight: 100;
+    color: var(--oceanblue);
+    margin-bottom: 0;
+    font-size: 5vh;
+}
+
+.frontpage-intro-box h2 {
+    margin-top: 0.5em;
+    font-weight: 400;
+    font-size: 3vh;
+}
+
+.frontpage-intro-box img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+}
+
+.frontpage-hrv-info {
+    width: 60%;
+    max-width: 1000px;
+    background-color: var(--lightgrey);
+    padding: 1em;
+    margin: 1em;
+}
+
+/* --- MOBILE STYLING --- */
+
+  @media screen and (max-width: 885px) {
+
+    header {
+        height: auto;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 1em;
+        background-color: var(--oceanblue);
+    }
+
+    .hamburger:hover {
+        background-color: orange;
+    }
+
+    .laptop-nav {
+        display: none;
+    }
+
+    .mobnav {
+        display: none;
+    }
+
+    #mobile-nav ul {
+        padding: 0;
+    }
+    
+    #mobile-nav ul li {
+        list-style-type: none;
+    }
+    
+    #mobile-nav ul li a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+      }
+    
+    #mobile-nav ul li a:hover {
+        background-color: #555;
+        color: white;
+      }
+    
+    .frontpage-intro-box, .frontpage-hrv-info {
+        width: 100%;
+    }
+
+    .frontpage-intro-box {
+        flex-direction: column;
+    }
+
+    .frontpage-intro-box h1 {
+        font-weight: 400;
+    }
+
+    .frontpage-intro-box img {
+        width: 100%;
+        height: auto;
+    }
+
+  }
+
+/**
+const tableBody = document.querySelector('.tbody');
+    tableBody.innerHTML = ''; // tyhjennetään taulukko
+
+    // TODO, myöhemmin järkevämpi erotella omaksi funktioksi
+    users.forEach((user) => {
+        const row = document.createElement('tr');
+    
+        row.innerHTML = `
+          <td>${user.username}</td>
+          <td>${user.email}</td>
+          <td><button class="check" data-id="${user.user_id}">Info</button></td>
+          <td><button class="del" data-id="${user.user_id}">Delete</button></td>
+          <td>${user.user_id}</td>
+        `;
+    
+        tableBody.appendChild(row);
+    });
+**/

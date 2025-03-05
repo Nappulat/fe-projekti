@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekti-etusivu</title>
+  </head>
+  <body>
+    <header>
+        <h2>OmaHRV</h2>
+        <div id="app"></div>
+        <!-- Top Navigation Menu, visible for laptops -->
+        <div class="laptop-nav">
+          <ul>
+            <li><a href="frontpage.html">Etusivu</a></li>
+            <li><a href="hrv-mittaukset.html">HRV mittaukset</a></li>
+            <li><a href="profile.html">Profiilisi</a></li>
+            <li><a href="#about" id="exit-program">Kirjaudu ulos</a></li>
+          </ul>
+        </div>
+        <!-- Top Navigation Menu Icon, visible for mobile -->
+        <a class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+        <!-- Top Navigation Menu, visible for mobile -->
+        <div class="mobnav">
+              <div id="mobile-nav">
+                <ul>
+                  <li><a href="frontpage.html">Etusivu</a></li>
+                  <li><a href="hrv-mittaukset.html">HRV Mittaukset</a></li>
+                  <li><a href="profile.html">Profiilisi</a></li>
+                  <li><a href="#about" id="exit-program">Kirjaudu ulos</a></li>
+                </ul>
+              </div>
+      </div>
+    </header>
+    <main>
+
+      <div class="frontpage-intro-box">
+        <div class="intro-box-text">
+          <h1>Tervetuloa käyttämään OmaHRV sovellusta</h1>
+          <h2>Kerää HRV analyysia ja dataa oman terveytesi ylläpitämiseksi</h2>
+        </div>
+        <img src="./public/img/walk-7945711_640.jpg" alt="image-of-a-couple">
+      </div>
+
+      <div class="frontpage-hrv-info">
+          <h3>Mitä tarkoittaa HRV?</h3>
+          <p> 
+              "Sykevaihtelu (HRV) on fysiologinen ilmiö, jossa peräkkäisten sydämenlyöntien 
+              väliset aikavälit vaihtelevat lyönnistä toiseen. HRV on yleisimmin käytetty 
+              työkalu fysiologisen stressin ja palautumisen objektiiviseen arviointiin, 
+              mutta vaatii tarkkoja analyysityökaluja." 
+          </p>
+
+          <h3>Mikä on HRV:n merkitys terveyteen?</h3>
+          <p>
+            "Heart Rate Variability (HRV) tarjoaa arvokasta tietoa kehosi stressitasosta, 
+            palautumisesta ja yleisestä terveydestä. HRV:tä seuraamalla yksilöt voivat 
+            arvioida autonomisen hermoston (ANS) tasapainoa ja ymmärtää, kuinka päivittäiset 
+            tottumukset, uni, stressi ja liikunta vaikuttavat heidän hyvinvointiinsa. Olipa 
+            kyseessä stressin hallinta, unen parantaminen tai palautumisen seuranta, HRV antaa 
+            sinulle mahdollisuuden tehdä tietoisia elämäntapavalintoja terveyden parantamiseksi."
+          </p>
+          <pre>Lähde: Kubios.com (käännös)</pre>
+      </div>
+
+    </main>
+    <footer>opiskelija-projekti@Mertopolia</footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

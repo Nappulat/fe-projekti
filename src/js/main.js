@@ -1,22 +1,27 @@
 import '../css/style.css';
-import '../css/snackbar.css';
-import {getItems} from './items.js';
-import {getUsers, addUser} from './users.js';
-import {getData} from './test.js';
-import {getEntries} from './entries.js';
+import '../css/frontpage.css';
+import { logout } from './auth.js';
+//import '../css/snackbar.css';
+//import {getItems} from './items.js';
+//import {getUsers, addUser} from './users.js';
+//import {getData} from './test.js';
+//import {getEntries} from './entries.js';
 
-document.querySelector('#app').innerHTML = 'Moi tässä oman APIn harjoituksia';
+document.querySelector('#app').innerHTML = `Tervetuloa ${localStorage.getItem('name')}`;
 
-getData();
+const exitAccount = document.querySelector('#exit-program');
+exitAccount.addEventListener('click', logout);
 
-const getItemBtn = document.querySelector('.get_items');
-getItemBtn.addEventListener('click', getItems);
+//getData();
 
-const getUserBtn = document.querySelector('.get_users');
-getUserBtn.addEventListener('click', getUsers);
+//const getItemBtn = document.querySelector('.get_items');
+//getItemBtn.addEventListener('click', getItems);
 
-const addUserForm = document.querySelector('.formpost');
-addUserForm.addEventListener('click', addUser);
+//const getUserBtn = document.querySelector('.get_users');
+//getUserBtn.addEventListener('click', getUsers);
 
-const getEntriesBtn = document.querySelector('.get_entries');
-getEntriesBtn.addEventListener('click', getEntries);
+//const addUserForm = document.querySelector('.formpost');
+//addUserForm.addEventListener('click', addUser);
+
+//const getEntriesBtn = document.querySelector('.get_entries');
+//getEntriesBtn.addEventListener('click', getEntries);

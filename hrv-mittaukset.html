@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekti-HRV</title>
+  </head>
+  <body>
+    <header>
+        <h2>OmaHRV</h2>
+        <div id="app"></div>
+        <!-- Top Navigation Menu, visible for laptops -->
+        <div class="laptop-nav">
+          <ul>
+            <li><a href="frontpage.html">Etusivu</a></li>
+            <li><a href="hrv-mittaukset.html">HRV mittaukset</a></li>
+            <li><a href="profile.html">Profiilisi</a></li>
+            <li><a href="#about" id="exit-program">Kirjaudu ulos</a></li>
+          </ul>
+        </div>
+        <!-- Top Navigation Menu Icon, visible for mobile -->
+        <a class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+        <!-- Top Navigation Menu, visible for mobile -->
+        <div class="mobnav">
+              <div id="mobile-nav">
+                <ul>
+                  <li><a href="frontpage.html">Etusivu</a></li>
+                  <li><a href="hrv-mittaukset.html">HRV Mittaukset</a></li>
+                  <li><a href="profile.html">Profiilisi</a></li>
+                  <li><a href="#about" id="exit-program">Kirjaudu ulos</a></li>
+                </ul>
+              </div>
+      </div>
+    </header>
+    <main>
+
+        <div class="hrv-input-form">
+              <h2>Syötä uudet mittaustiedot</h2>
+              <pre>POST http://localhost:3000/api/entries</pre>
+              <form class="input-measurement-entry">
+                  <div>
+                    <label for="measurement-date">Päivämäärä:</label>
+                    <input 
+                      type="text" 
+                      id="time-id" 
+                      name="t-id" 
+                      placeholder="vvvv-pv-kk"
+                      required
+                    />
+                  </div>
+                  <div>
+                      <label for="readiness-bar">Valmiusprosentti:</label>
+                      <input 
+                        type="number" 
+                        min="0" 
+                        id="readiness-id" 
+                        name="r-id" 
+                        placeholder="%"
+                        required 
+                        />
+                  </div>
+                  <div>
+                      <label for="bpm">Pulssi:</label>
+                      <input 
+                        type="number" 
+                        min="0" 
+                        id="bpm-id" 
+                        name="b-id" 
+                        placeholder="bpm"
+                        required 
+                        />
+                  </div>
+                  <div>
+                      <label for="rmssd">RMSSD:</label>
+                      <input 
+                        type="number" 
+                        min="0" 
+                        id="rmssd-id" 
+                        name="rmssd-n-id" 
+                        placeholder="rmssd"
+                        required 
+                        />
+                  </div>
+                  <div>
+                      <label for="sns">SNS:</label>
+                      <input 
+                        type="float" 
+                        id="sns-id" 
+                        name="sns-n-id" 
+                        placeholder="sns"
+                        required 
+                        />
+                  </div>
+                  <div>
+                      <label for="pns">PNS:</label>
+                      <input 
+                        type="float" 
+                        id="pns-id" 
+                        name="pns-n-id" 
+                        placeholder="pns"
+                        required 
+                        />
+                  </div>
+                  <div>
+                    <label for="sleep-hours">Nukutut tunnit:</label>
+                    <input 
+                      type="number" 
+                      min="0"
+                      max="24" 
+                      id="sleep-id" 
+                      name="sleep-n-id" 
+                      placeholder="tunnit"
+                      required 
+                      />
+                  </div>
+                  <div>
+                      <label for="phy-age">Fyysinen ikä:</label>
+                      <input 
+                        type="number" 
+                        id="phy-age-id" 
+                        name="phy-age-n-id" 
+                        placeholder="vuodet"
+                        required 
+                        />
+                  </div>
+                  <div>
+                      <label for="mood">Mielentila:</label>
+                      <input 
+                        type="text" 
+                        id="mood-id" 
+                        name="mood-n-id" 
+                        placeholder="mielentilan kuvaus"
+                        required 
+                        />
+                  </div>
+                  <div>
+                    <label for="notes">Muistiinpanot:</label>
+                    <input 
+                      type="text" 
+                      id="notes-id" 
+                      name="notes-n-id" 
+                      placeholder="Lisättävää."
+                      required 
+                      />
+                  </div>
+              </form>
+              <input
+                  name="submit"
+                  type="submit"
+                  value="Syötä uusi mittaus"
+                  class="create-m"
+                  id="post-m"
+              />
+              <pre>Muista päivittää (eng. refresh) sivu, niin uusin mittaustulos tulee listan huipulle.</pre>
+        </div>
+
+        <div class="hrv-m-table">
+              <h2>Tallennetut mittaustiedot</h2>
+              <pre>GET http://localhost:3000/api/entries</pre>
+              <table class="hrv-m-table">
+                <thead>
+                  <tr>
+                    <th>Num</th>
+                    <th>PVMÄ</th>
+                    <th>TULOKSET</th>
+                    <th>TOIMINNOT</th>
+                  </tr>
+                </thead>
+                <tbody class="tbody">
+                  <!-- LISTING ALL HRV MEASUREMENTS-->
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <footer>opiskelija-projekti@Mertopolia</footer>
+    <div class="m-module" id="diary-box"></div>
+    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/hrv.js"></script>
+  </body>
+</html>

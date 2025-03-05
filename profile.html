@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekti-profiili</title>
+  </head>
+  <body>
+    <header>
+        <h2>OmaHRV</h2>
+        <div id="app"></div>
+        <!-- Top Navigation Menu, visible for laptops -->
+        <div class="laptop-nav">
+          <ul>
+            <li><a href="frontpage.html">Etusivu</a></li>
+            <li><a href="hrv-mittaukset.html">HRV mittaukset</a></li>
+            <li><a href="profile.html">Profiilisi</a></li>
+            <li><a href="#about" id="exit-program">Kirjaudu ulos</a></li>
+          </ul>
+        </div>
+        <!-- Top Navigation Menu Icon, visible for mobile -->
+        <a class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+        <!-- Top Navigation Menu, visible for mobile -->
+        <div class="mobnav">
+              <div id="mobile-nav">
+                <ul>
+                  <li><a href="frontpage.html">Etusivu</a></li>
+                  <li><a href="hrv-mittaukset.html">HRV Mittaukset</a></li>
+                  <li><a href="profile.html">Profiilisi</a></li>
+                  <li><a href="#about" id="exit-program">Kirjaudu ulos</a></li>
+                </ul>
+              </div>
+      </div>
+    </header>
+    <main>
+        <div class="profile-container">
+        <div class="profile-userregister">
+            <h2>Profiilitiedot</h2>
+            <pre>GET http://localhost:3000/api/users/:id</pre>
+            <div class="print-profile" id="your-profile">
+                <div id="user-username">
+                    <h4>Käyttäjänimi</h4>
+                </div>
+                <div id="user-email">
+                    <h4>Sähköposti</h4>
+                </div>
+                <div id="user-fname">
+                    <h4>Etunimi</h4>
+                </div>
+                <div id="user-lname">
+                    <h4>Sukunimi</h4>
+                </div>
+                <div id="user-occupation">
+                    <h4>Työpaikka- tehtävä</h4>
+                </div>
+                <div id="user-weight">
+                    <h4>Paino</h4>
+                </div>
+                <div id="user-height">
+                    <h4>Paino</h4>
+                </div>
+                <div id="user-created">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="profile-userinfo">
+            <h2>Syötä tai muokkaa profiilitietoja</h2>
+            <pre>Printtaa käyttäjän terveyttä koskevat tiedot</pre>
+            <!--<pre>PUT http://localhost:3000/api/users/:id</pre>-->
+            <form class="registerUserInfo">
+                <label for="work">Etunimi</label>
+                <input
+                    id="fname"
+                    type="text"
+                    name="fname"
+                    placeholder="Etunimi"
+                    minlength="2"
+                    maxlength="50"
+                    required
+                />
+                <label for="work">Sukunimi</label>
+                <input
+                    id="lname"
+                    type="text"
+                    name="lname"
+                    placeholder="Sukunimi"
+                    minlength="2"
+                    maxlength="50"
+                    required
+                />
+                <label for="work">Työpaikka</label>
+                <input
+                    id="work"
+                    type="text"
+                    name="work"
+                    placeholder="Yritys/ työtehtävä"
+                    minlength="7"
+                    maxlength="100"
+                    required
+                />
+                <label for="weight">Paino</label>
+                <input
+                    id="weight"
+                    type="number"
+                    name="weight"
+                    placeholder="kg"
+                    minlength="2"
+                    maxlength="5"
+                    required
+                />
+                <label for="height">Pituus</label>
+                <input
+                    id="height"
+                    type="number"
+                    name="height"
+                    placeholder="cm"
+                    minlength="2"
+                    maxlength="5"
+                    required
+                />
+                <input
+                    name="submit"
+                    type="submit"
+                    value="Syötä tiedot"
+                    class="postUserInfo"
+                />
+            </form>
+            <p>Muista päivittää (eng. refresh) sivu, niin muutokset tulevat näkyviin.</p>
+        </div>
+    </div>
+
+        <div class="profile-usermed">
+            <h2>Reseptit</h2>
+            <pre>GET http://localhost:3000/api/med/:id</pre>
+            <pre>PUT http://localhost:3000/api/med/:id</pre>
+            <form class="registerMed">
+                <label for="work">Nimi *</label>
+                <input
+                    id="med-name"
+                    type="text"
+                    name="med-name"
+                    placeholder="Lääkkeen nimi"
+                    minlength="3"
+                    maxlength="50"
+                    required
+                />
+                <label for="work">Määrä *</label>
+                <input
+                    id="med-dos"
+                    type="text"
+                    name="med-dos"
+                    placeholder="mg"
+                    min="1"
+                    max="3000"
+                    required
+                />
+                <label for="start">Aloitus pvämäärä *</label>
+                <input
+                    id="med-start"
+                    type="text"
+                    name="med-start"
+                    placeholder="vvvv-pv-kk"
+                    minlength="10"
+                    maxlength="10"
+                    required
+                />
+                <label for="end">Lopetus pvämäärä</label>
+                <input
+                    id="med-stop"
+                    type="text"
+                    name="med-stop"
+                    placeholder="vvvv-pv-kk"
+                    minlength="10"
+                    maxlength="10"
+                />
+                <label for="more">Lisätietoja</label>
+                <input
+                    id="med-extra"
+                    type="text"
+                    name="med-extra"
+                    placeholder="Muuta"
+                    minlength="1"
+                    maxlength="250"
+                />
+                <input
+                    name="submit"
+                    type="submit"
+                    value="Syötä resepti"
+                    class="postUserMed"
+                />
+            </form>
+        </div>
+        <div class="medicine-table">
+            <h2>Tallennetut mittaustiedot</h2>
+            <pre>GET http://localhost:3000/api/entries</pre>
+            <table class="med-table">
+              <thead>
+                <tr>
+                  <th>Num</th>
+                  <th>Nimi</th>
+                  <th>Annostus</th>
+                  <th>Aloitettu</th>
+                  <th>Lopetetaan</th>
+                  <th>Lisätiedot</th>
+                  <th>Toiminnot</th>
+                </tr>
+              </thead>
+              <tbody class="med-tbody">
+                <!-- LISTING ALL HRV MEASUREMENTS-->
+              </tbody>
+          </table>
+      </div>
+
+    </main>
+    <footer>opiskelija-projekti@Mertopolia</footer>
+    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/profile.js"></script>
+  </body>
+</html>

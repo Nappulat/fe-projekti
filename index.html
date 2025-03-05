@@ -4,27 +4,88 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Projekti-kirjautuminen</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-      </ul>
-    </nav>
-    <h2>Index / Kotisivu</h2>
-    <ul>
-      <li>
-        <a href="./src/pages/apitest.html" target="_blank"
-          >Linkki APItesteihin</a
-        >
-      </li>
-      <li>
-        <a href="./src/pages/authtest.html" target="_blank">Linkki Auth</a>
-      </li>
-    </ul>
+    <header>
+      <h2>OmaHRV</h2>
+    </header>
+    <main>
+      <button class="phone-login" id="phone-show-login">Kirjaudu</button>
+      <button class="phone-user-register" id="phone-show-reg">Luo uusi tili</button>
+      <div class="forms">
 
+        <div class="login-form">
+            <h3>Kirjautuminen</h3>
+            <form class="loginForm">
+              <label for="username">Käyttäjänimi</label>
+                <input 
+                  type="text" 
+                  name="username" 
+                  placeholder="Syötä käyttäjänimi tähän" 
+                  value="" 
+                  required
+                />
+              <label for="password">Salasana</label>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Syötä salasana tähän"
+                  value=""
+                  required
+                />
+              <input
+                  name="submit"
+                  type="submit"
+                  value="Kirjaudu"
+                  class="loginform"
+                />
+                <button class="create-user-button" id="create-u-btn">Luo uusi tili</button>
+            </form>
+            <br /><div id="loginResponse"></div>
+          </div>
+        <div class="create-new-user">
+          <h3>Syötä käyttäjätilin tiedot</h3>
+          <form class="registerForm">
+            <label for="username">Uusi käyttäjänimi</label>
+            <input
+              id="username"
+              type="text"
+              name="uname"
+              placeholder="Syötä käyttäjänimi tähän"
+              minlength="8"
+              maxlength="12"
+              required
+            />
+            <label for="password">Uusi salasana</label>
+            <input
+              id="password"
+              type="pssword"
+              name="pssword"
+              placeholder="Syötä salasana tähän"
+              pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+              required
+            />
+            <label for="email">Uusi sähköposti</label>
+            <input
+              id="email"
+              type="mail"
+              name="mail"
+              placeholder="Syötä sähköposti tähän"
+              required
+            />
+            <input
+              name="submit"
+              type="submit"
+              value="Luo"
+              class="postuser"
+            />
+          </form>
+        </div>
+
+    </div>
+    </main>
+    <footer> opiskelija-projekti@Mertopolia</footer>
     <script type="module" src="/src/js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,141 @@
+:root {
+    --darkblue: #1D3557;
+    --oceanblue: #457B9D;
+    --midblue: #a8dadc;
+    --lightblue: #f1faee;
+    --lightgrey: #f1f1f1;
+    --red: #e63946;
+  }
+  
+  * {
+      box-sizing: border-box;
+  }
+
+/*.profile-userregister, .profile-userinfo, .profile-usermed {
+    width: 90%;
+}*/
+
+.registerUserInfo, .registerMed {
+    padding-left: 0;
+}
+
+.profile-userregister {
+    box-shadow: 7px 7px 5px var(--lightgrey);
+    padding: 1em;
+}
+
+.postUserInfo, .postUserMed {
+    margin-top: 1em;
+    border: none;
+    background-color: var(--red);
+    color: white;
+    transition: 0.3s;
+}
+
+.postUserInfo:hover, .postUserMed:hover {
+    background-color: var(--darkblue);
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+#your-profile {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5em;
+}
+
+#your-profile p, #your-profile h4 {
+    padding: 0;
+    margin: 0.5em;
+}
+
+#user-username, #user-email {
+    background-color: var(--lightgrey);
+}
+
+#user-created {
+    background-color: var(--oceanblue);
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.profile-userinfo {
+    box-shadow: 7px 7px 5px var(--lightgrey);
+    background-color: var(--oceanblue);
+    color: white;
+    padding: 1em;
+}
+
+.profile-usermed {
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* --- MEDICINE TABLE STYLING --- */
+
+.medicine-table {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.med-table {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.med-table th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--midblue);
+}
+
+.med-table td {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0.5em;
+    /*padding-right: 1em;*/
+}
+
+.med-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+
+@media screen and (max-width: 985px) {
+    .profile-container  {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profile-userregister {
+        width: 100%;
+    }
+
+    .profile-userinfo, .profile-usermed {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    .profile-userinfo {
+        background-color: var(--lightgrey);
+        color: black;
+    }
+
+    .registerMed, .profile-usermed h2, .profile-usermed pre{
+        margin-left: 1em;
+    }
+}
