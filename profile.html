@@ -26,22 +26,21 @@
           <div></div>
         </a>
         <!-- Top Navigation Menu, visible for mobile -->
-        <div class="mobnav">
-              <div id="mobile-nav">
-                <ul>
-                  <li><a href="frontpage.html">Etusivu</a></li>
-                  <li><a href="hrv-mittaukset.html">HRV Mittaukset</a></li>
-                  <li><a href="profile.html">Profiilisi</a></li>
-                  <li><a href="#about" id="exit-program">Kirjaudu ulos</a></li>
-                </ul>
-              </div>
-      </div>
     </header>
+    <div class="mobnav">
+        <div id="mobile-nav">
+          <ul>
+            <li><a href="frontpage.html">Etusivu</a></li>
+            <li><a href="hrv-mittaukset.html">HRV Mittaukset</a></li>
+            <li><a href="profile.html">Profiilisi</a></li>
+            <li><a href="#about" id="exit-program-mob">Kirjaudu ulos</a></li>
+          </ul>
+        </div>
+    </div>
     <main>
         <div class="profile-container">
         <div class="profile-userregister">
             <h2>Profiilitiedot</h2>
-            <pre>GET http://localhost:3000/api/users/:id</pre>
             <div class="print-profile" id="your-profile">
                 <div id="user-username">
                     <h4>Käyttäjänimi</h4>
@@ -72,8 +71,6 @@
 
         <div class="profile-userinfo">
             <h2>Syötä tai muokkaa profiilitietoja</h2>
-            <pre>Printtaa käyttäjän terveyttä koskevat tiedot</pre>
-            <!--<pre>PUT http://localhost:3000/api/users/:id</pre>-->
             <form class="registerUserInfo">
                 <label for="work">Etunimi</label>
                 <input
@@ -138,8 +135,6 @@
 
         <div class="profile-usermed">
             <h2>Reseptit</h2>
-            <pre>GET http://localhost:3000/api/med/:id</pre>
-            <pre>PUT http://localhost:3000/api/med/:id</pre>
             <form class="registerMed">
                 <label for="work">Nimi *</label>
                 <input
@@ -199,7 +194,6 @@
         </div>
         <div class="medicine-table">
             <h2>Tallennetut mittaustiedot</h2>
-            <pre>GET http://localhost:3000/api/entries</pre>
             <table class="med-table">
               <thead>
                 <tr>

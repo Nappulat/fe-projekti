@@ -2,8 +2,6 @@ import '../css/style.css';
 import '../css/snackbar.css';
 import {fetchData} from './fetch.js';
 
-console.log('Moi luodaan nyt tokeneita ja kirjaudutaan sisään');
-
 // Esimerkin takia haut ovat nyt suoraan tässä tiedostossa, jotta harjoitus ei sekoita
 // teidän omaa projektin rakennetta
 

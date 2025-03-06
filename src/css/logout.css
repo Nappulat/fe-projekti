@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 850px) { 
+    main {
+        height: 80vh;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 3vw;
+        background-color:#e63946;
+        padding: 1em;
+        color: white;
+    }
+
+    a:hover {
+        background-color:white;
+        color: #e63946;
+    }
+}

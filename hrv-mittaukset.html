@@ -26,22 +26,21 @@
           <div></div>
         </a>
         <!-- Top Navigation Menu, visible for mobile -->
-        <div class="mobnav">
-              <div id="mobile-nav">
-                <ul>
-                  <li><a href="frontpage.html">Etusivu</a></li>
-                  <li><a href="hrv-mittaukset.html">HRV Mittaukset</a></li>
-                  <li><a href="profile.html">Profiilisi</a></li>
-                  <li><a href="#about" id="exit-program">Kirjaudu ulos</a></li>
-                </ul>
-              </div>
-      </div>
     </header>
+    <div class="mobnav">
+      <div id="mobile-nav">
+        <ul>
+          <li><a href="frontpage.html">Etusivu</a></li>
+          <li><a href="hrv-mittaukset.html">HRV Mittaukset</a></li>
+          <li><a href="profile.html">Profiilisi</a></li>
+          <li><a href="#about" id="exit-program-mob">Kirjaudu ulos</a></li>
+        </ul>
+      </div>
+    </div>
     <main>
 
         <div class="hrv-input-form">
               <h2>Syötä uudet mittaustiedot</h2>
-              <pre>POST http://localhost:3000/api/entries</pre>
               <form class="input-measurement-entry">
                   <div>
                     <label for="measurement-date">Päivämäärä:</label>
@@ -156,12 +155,11 @@
                   class="create-m"
                   id="post-m"
               />
-              <pre>Muista päivittää (eng. refresh) sivu, niin uusin mittaustulos tulee listan huipulle.</pre>
+              <p>Muista päivittää (eng. refresh) sivu, niin uusin mittaustulos tulee listan huipulle.</p>
         </div>
 
         <div class="hrv-m-table">
               <h2>Tallennetut mittaustiedot</h2>
-              <pre>GET http://localhost:3000/api/entries</pre>
               <table class="hrv-m-table">
                 <thead>
                   <tr>

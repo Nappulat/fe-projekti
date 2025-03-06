@@ -255,7 +255,7 @@ const updateUserInfo = async (event) => {
               <td>${res.start_date}</td>
               <td>${res.end_date}</td>
               <td>${res.extra}</td>
-              <td><button class="delete-m" data-id="${res.medicaation_id}">POISTA</button></td>
+              <td><button class="delete-m" data-id="${res.medication_id}">POISTA</button></td>
               `;
   
           tableBody.appendChild(row);
@@ -267,8 +267,76 @@ const updateUserInfo = async (event) => {
           });
   
           //addEventListenersOpen();
-          //addEventListenersDel();
+          addEventListenersDel();
       };
+
+      //GET MEDICATION_ID FOR DELETING A RECIPE
+      const addEventListenersDel = () => {
+        const nappulat = document.querySelectorAll('.delete-m');
+        console.log(nappulat);
+        nappulat.forEach((button) => {
+          button.addEventListener('click', async (event) => {
+            console.log('Klikkasit nappulaa:', event.target);
+            const medication_Id = event.target.dataset.id;
+            console.log('Haetaan tietoja käyttäjälle id:llä:', medication_Id);
+            deleteMed(medication_Id);
+          });
+        });
+      };
+
+    // DELETE A SPECIFIC MEDICATION
+
+    const deleteMed = async (med_id) => {
+    //console.log('onko oikein' +  entry)
+
+    let user_id = localStorage.getItem('user_id');
+    let token = localStorage.getItem('token');
+
+    let text = "Oletko varma, että lääke poistetaan ?\n Paina 'OK' tai 'Cancel'.";
+    if (confirm(text) == true) {
+        text = "You pressed OK!";
+        //PITÄÄ SYÖTTÄÄ ENTRY_ID clientille.
+        const url = `http://localhost:3000/api/med/${user_id}`;
+
+        // Nyt haetaan token local Storagelta
+        console.log('tokeni on : ' + token)
+
+        const medication_id = med_id
+
+        const bodyData = { 
+          medication_id: medication_id 
+        }
+
+        // Options
+        const options = {
+            body: JSON.stringify(bodyData),
+            method: 'DELETE',
+            headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-type': 'application/json',
+            }
+        };
+
+        console.log(options);
+
+        // Hae data
+        const response = await fetchData(url, options);
+
+        if (response.error) {
+            console.error('Error getting data:', response.error);
+            return;
+        }
+
+        if (response.message) {
+            console.log(response.message, 'success');
+        }
+
+        console.log('Poistettu' + response);
+      } else {
+        console.log('Delete cancelled!')
+      }
+
+};
   
 
 const sendProfileForm = document.querySelector('.registerUserInfo');

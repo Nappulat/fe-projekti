@@ -114,8 +114,29 @@
     background-color: #f3f3f3;
 }
 
+.delete-m {
+    border: none;
+    background-color: var(--oceanblue);
+    color: var(--lightblue);
+    width: 90%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    max-width: 150px;
+    transition: 0.3s;
+    background-color: var(--red);
+}
+
+.delete-m:hover {
+    background-color: var(--darkblue);
+}
+
 
 @media screen and (max-width: 985px) {
+
+    h2 {
+        font-size: 5vw;
+    }
+
     .profile-container  {
         flex-direction: column;
         width: 100%;
@@ -135,7 +156,45 @@
         color: black;
     }
 
+    .medicine-table {
+        width: 100%;
+    }
+
     .registerMed, .profile-usermed h2, .profile-usermed pre{
+        margin-left: 1em;
+    }
+
+    .med-tbody {
+        width: 100%;
+    }
+
+    th, td, .delete-m {
+        padding: 0;
+        font-size: 2vw;
+    }
+
+    .delete-m {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 100%;
+    }
+
+    th:nth-child(6) {
+        display: none;
+    }
+
+    td:nth-child(6) {
+        display: none;
+      }
+      
+}
+
+@media screen and (max-width: 350px) {
+    #your-profile {
+        font-size: 4vw;
+    }
+
+    .medicine-table h2 {
         margin-left: 1em;
     }
 }

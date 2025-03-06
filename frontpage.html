@@ -25,18 +25,18 @@
           <div></div>
           <div></div>
         </a>
-        <!-- Top Navigation Menu, visible for mobile -->
-        <div class="mobnav">
-              <div id="mobile-nav">
-                <ul>
-                  <li><a href="frontpage.html">Etusivu</a></li>
-                  <li><a href="hrv-mittaukset.html">HRV Mittaukset</a></li>
-                  <li><a href="profile.html">Profiilisi</a></li>
-                  <li><a href="#about" id="exit-program">Kirjaudu ulos</a></li>
-                </ul>
-              </div>
-      </div>
     </header>
+     <!-- Top Navigation Menu, visible for mobile -->
+     <div class="mobnav">
+      <div id="mobile-nav">
+        <ul>
+          <li><a href="frontpage.html">Etusivu</a></li>
+          <li><a href="hrv-mittaukset.html">HRV Mittaukset</a></li>
+          <li><a href="profile.html">Profiilisi</a></li>
+          <li><a href="#about" id="exit-program-mob">Kirjaudu ulos</a></li>
+        </ul>
+      </div>
+  </div>
     <main>
 
       <div class="frontpage-intro-box">
@@ -44,7 +44,24 @@
           <h1>Tervetuloa käyttämään OmaHRV sovellusta</h1>
           <h2>Kerää HRV analyysia ja dataa oman terveytesi ylläpitämiseksi</h2>
         </div>
-        <img src="./public/img/walk-7945711_640.jpg" alt="image-of-a-couple">
+        <img src="./img/walk-7945711_640.jpg" alt="image-of-a-couple">
+      </div>
+
+      <div class="user-heading">
+        <h2>Käyttäjäraportti</h2>
+        <h3>Alla näet keskiarvoja HRV tuloksista</h3>
+      </div>
+
+      <div class="user-raport">
+        <div class="readiness" id="readiness-average">
+          <p class="small-heading">Valmiusmittaus keskiarvo (%)</p>
+        </div>
+        <div class="phy_age" id="age-average">
+          <p class="small-heading">Physiologisen ikäsi keskiarvo (v)</p>
+        </div>
+        <div class="sleep" id="sleep-average">
+          <p class="small-heading">Nukuttujen tuntien keskiarvo (h)</p>
+        </div>
       </div>
 
       <div class="frontpage-hrv-info">
@@ -65,11 +82,11 @@
             kyseessä stressin hallinta, unen parantaminen tai palautumisen seuranta, HRV antaa 
             sinulle mahdollisuuden tehdä tietoisia elämäntapavalintoja terveyden parantamiseksi."
           </p>
-          <pre>Lähde: Kubios.com (käännös)</pre>
       </div>
 
     </main>
     <footer>opiskelija-projekti@Mertopolia</footer>
     <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/stats.js"></script>
   </body>
 </html>

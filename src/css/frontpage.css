@@ -105,7 +105,7 @@ main {
     height: auto;
 }
 
-.frontpage-hrv-info {
+.frontpage-hrv-info, .user-raport, .user-heading {
     width: 60%;
     max-width: 1000px;
     background-color: var(--lightgrey);
@@ -113,12 +113,82 @@ main {
     margin: 1em;
 }
 
+.user-heading {
+    background-color: white;
+}
+
+.user-heading h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+}
+
+.user-raport {
+    background-color: white;
+    box-shadow: 7px 7px 5px var(--lightgrey);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#sleep-average, #readiness-average, #age-average {
+    width: 30%;
+    padding: 0.5em;
+    background-color: var(--darkblue);
+    text-align: center;
+}
+
+#readiness-average {
+    background-color: var(--lightblue);
+}
+
+#readiness-average .small-heading {
+    color: var(--oceanblue);
+}
+
+#readiness-average h1, #sleep-average h1, #age-average h1 {
+    color: white;
+    font-size: 7vw;
+    padding: 0;
+    margin: 0;
+}
+
+#age-average {
+    background-color: var(--midblue);
+}
+
+#age-average .small-heading {
+    color: #1D3557;
+}
+
+#age-average h1 {
+    color: var(--red);
+}
+
+#readiness-average h1 {
+    color: #1D3557;
+}
+
+.small-heading {
+    padding: 0;
+    margin: 0;
+    color: pink;
+}
+
 /* --- MOBILE STYLING --- */
 
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 987px) {
 
     header {
         height: auto;
+    }
+
+    header h2 {
+        font-size: 3vw;
+    }
+
+    #app {
+        font-size: 2vw;
     }
 
     .hamburger {
@@ -141,6 +211,8 @@ main {
 
     #mobile-nav ul {
         padding: 0;
+        margin: 0;
+        background-color: var(--lightgrey);
     }
     
     #mobile-nav ul li {
@@ -151,14 +223,15 @@ main {
         display: block;
         color: #000;
         text-decoration: none;
+        padding: 1em;
       }
     
     #mobile-nav ul li a:hover {
-        background-color: #555;
+        background-color: var(--red);
         color: white;
       }
     
-    .frontpage-intro-box, .frontpage-hrv-info {
+    .frontpage-intro-box, .frontpage-hrv-info, .user-raport, .user-heading {
         width: 100%;
     }
 
@@ -168,31 +241,48 @@ main {
 
     .frontpage-intro-box h1 {
         font-weight: 400;
+        font-size: 6vw;
+    }
+
+    .frontpage-intro-box h2 {
+        font-size: 4vw;
     }
 
     .frontpage-intro-box img {
         width: 100%;
+        max-width: none;
         height: auto;
+    }
+
+    .frontpage-hrv-info {
+        margin: 0;
+    }
+
+    .frontpage-hrv-info h3, .frontpage-hrv-info p, footer {
+        font-size: 3vw;
+    }
+
+    .small-heading {
+        font-size: 2vw;
+    }
+
+    .user-heading h2 {
+        font-size: 3vw;
+    }
+
+    .user-heading h3 {
+        font-size: 3vw;
     }
 
   }
 
-/**
-const tableBody = document.querySelector('.tbody');
-    tableBody.innerHTML = ''; // tyhjennetään taulukko
+  @media screen and (max-width: 400px) {
+    .user-raport {
+        flex-direction: column;
+        gap: 1em;
+    }
 
-    // TODO, myöhemmin järkevämpi erotella omaksi funktioksi
-    users.forEach((user) => {
-        const row = document.createElement('tr');
-    
-        row.innerHTML = `
-          <td>${user.username}</td>
-          <td>${user.email}</td>
-          <td><button class="check" data-id="${user.user_id}">Info</button></td>
-          <td><button class="del" data-id="${user.user_id}">Delete</button></td>
-          <td>${user.user_id}</td>
-        `;
-    
-        tableBody.appendChild(row);
-    });
-**/
+    #readiness-average, #sleep-average, #age-average {
+        width: 100%;
+    }
+  }

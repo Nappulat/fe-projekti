@@ -166,6 +166,14 @@ footer {
 
 @media screen and (max-width: 450px) {
 
+  p, label {
+    font-size: 4vw;
+  }
+
+  .login-form h3 {
+    font-size: 3vw;
+  }
+
   main {
     height: 80vh;
   }

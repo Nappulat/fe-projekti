@@ -270,10 +270,11 @@ const getUserEntries = async () => {
 
 /*  
 */
+
+getUserEntries();
+
 const entryForm = document.querySelector('#post-m');
 entryForm.addEventListener('click', registerEntry);
 
 /**/
-
-getUserEntries();
 printEntry();
