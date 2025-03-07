@@ -38,9 +38,3 @@ registerForm.addEventListener('submit', registerUser);
 
 const loginForm = document.querySelector('.loginForm');
 loginForm.addEventListener('submit', loginUser, checkUser);
-
-//const meRequest = document.querySelector('#meRequest');
-//meRequest.addEventListener('click', checkUser);
-
-//const exitProgram = document.querySelector('#clearButton');
-//exitProgram.addEventListener('click', logout);

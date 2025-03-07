@@ -1,20 +1,14 @@
 import '../css/profile.css';
 import {fetchData} from './fetch.js';
 
-console.log('profiili.js auki')
 
 //PRINT USERINFO
 const getUserProfile = async () => {
     let token = localStorage.getItem('token');
     let id = localStorage.getItem('user_id');
 
-    // Endpoint
     const url = `http://localhost:3000/api/users/${id}`;
 
-    // Nyt haetaan token local Storagelta
-    console.log('tokeni on : ' + token)
-
-    // Options
     const options = {
         headers: {
             'Authorization': `Bearer ${token}`,
@@ -23,7 +17,6 @@ const getUserProfile = async () => {
 
     console.log(options);
 
-    // Hae data
     const response = await fetchData(url, options);
 
     if (response.error) {
@@ -34,11 +27,8 @@ const getUserProfile = async () => {
     if (response.message) {
         console.log(response.message, 'success');
     }
-
-    console.log(response)
     
     //PRINTING TO PROFILE
-    //response.forEach((res) => {}); 
     const profileUsername = document.querySelector('#user-username');
     const username = document.createElement('p');
     username.innerHTML = `${response.username}`;
@@ -89,17 +79,14 @@ const updateUserInfo = async (event) => {
     let token = localStorage.getItem('token');
     let id = localStorage.getItem('user_id');
   
-    // Haetaan oikea formi
     const profileForm = document.querySelector('.registerUserInfo');
   
-    // Haetaan formista arvot
     const fname = profileForm.querySelector('#fname').value.trim();
     const lname = profileForm.querySelector('#lname').value.trim();
     const occupation = profileForm.querySelector('#work').value.trim();
     const weight = profileForm.querySelector('#weight').value.trim();
     const height = profileForm.querySelector('#height').value.trim();
   
-    // Luodaan body lähetystä varten taustapalvelun vaatimaan muotoon
     const bodyData = {
       fname: fname,
       lname: lname,
@@ -110,10 +97,8 @@ const updateUserInfo = async (event) => {
 
     console.log(bodyData)
   
-    // Endpoint
     const url = `http://localhost:3000/api/users/${id}`;
   
-    // Options
     const options = {
       body: JSON.stringify(bodyData),
       method: 'PUT',
@@ -124,7 +109,6 @@ const updateUserInfo = async (event) => {
     };
     console.log(options);
   
-    // Hae data
     const response = await fetchData(url, options);
   
     if (response.error) {
@@ -141,7 +125,7 @@ const updateUserInfo = async (event) => {
     }
   
     console.log(response);
-    profileForm.reset(); // tyhjennetään formi
+    profileForm.reset();
   };
 
   //ADDING A NEW MEASUREMENT
@@ -152,17 +136,14 @@ const updateUserInfo = async (event) => {
     let token = localStorage.getItem('token');
     let id = localStorage.getItem('user_id');
   
-    // Haetaan oikea formi
     const medForm = document.querySelector('.registerMed');
   
-    // Haetaan formista arvot
     const name = medForm.querySelector('#med-name').value.trim();
     const dosage = medForm.querySelector('#med-dos').value.trim();
     const start_date = medForm.querySelector('#med-start').value.trim();
     const end_date = medForm.querySelector('#med-stop').value.trim();
     const extra = medForm.querySelector('#med-extra').value.trim();
   
-    // Luodaan body lähetystä varten taustapalvelun vaatimaan muotoon
     const bodyData = {
       name: name,
       dosage: dosage,
@@ -173,10 +154,8 @@ const updateUserInfo = async (event) => {
 
     console.log(bodyData)
   
-    // Endpoint
     const url = `http://localhost:3000/api/med/${id}`;
   
-    // Options
     const options = {
       body: JSON.stringify(bodyData),
       method: 'POST',
@@ -187,7 +166,6 @@ const updateUserInfo = async (event) => {
     };
     console.log(options);
   
-    // Hae data
     const response = await fetchData(url, options);
   
     if (response.error) {
@@ -204,21 +182,18 @@ const updateUserInfo = async (event) => {
     }
   
     console.log(response);
-    medForm.reset(); // tyhjennetään formi
+    medForm.reset();
   };
 
   
   const getUserMedications = async () => {
       
       let user_Id = localStorage.getItem('user_id');
-      // Endpoint
+
       const url = `http://localhost:3000/api/med/${user_Id}`;
   
-      // Nyt haetaan token local Storagelta
       let token = localStorage.getItem('token');
-      console.log('tokeni on : ' + token)
   
-      // Options
       const options = {
           headers: {
               'Authorization': `Bearer ${token}`,
@@ -227,7 +202,6 @@ const updateUserInfo = async (event) => {
   
       console.log(options);
   
-      // Hae data
       const response = await fetchData(url, options);
   
       if (response.error) {
@@ -261,19 +235,15 @@ const updateUserInfo = async (event) => {
           tableBody.appendChild(row);
           localStorage.setItem(`set_entry ${nro+1}`, res.entry_id);
   
-          //const entryRow = document.querySelector(`#result-${nro+1}`)
-          //entryRow.addEventListener('click', printEntry);
           nro += 1;
           });
   
-          //addEventListenersOpen();
           addEventListenersDel();
       };
 
       //GET MEDICATION_ID FOR DELETING A RECIPE
       const addEventListenersDel = () => {
         const nappulat = document.querySelectorAll('.delete-m');
-        console.log(nappulat);
         nappulat.forEach((button) => {
           button.addEventListener('click', async (event) => {
             console.log('Klikkasit nappulaa:', event.target);
@@ -287,18 +257,16 @@ const updateUserInfo = async (event) => {
     // DELETE A SPECIFIC MEDICATION
 
     const deleteMed = async (med_id) => {
-    //console.log('onko oikein' +  entry)
 
     let user_id = localStorage.getItem('user_id');
     let token = localStorage.getItem('token');
 
     let text = "Oletko varma, että lääke poistetaan ?\n Paina 'OK' tai 'Cancel'.";
     if (confirm(text) == true) {
-        text = "You pressed OK!";
-        //PITÄÄ SYÖTTÄÄ ENTRY_ID clientille.
+        text = "Poisto varmistettu!";
+
         const url = `http://localhost:3000/api/med/${user_id}`;
 
-        // Nyt haetaan token local Storagelta
         console.log('tokeni on : ' + token)
 
         const medication_id = med_id
@@ -307,7 +275,6 @@ const updateUserInfo = async (event) => {
           medication_id: medication_id 
         }
 
-        // Options
         const options = {
             body: JSON.stringify(bodyData),
             method: 'DELETE',
@@ -319,7 +286,6 @@ const updateUserInfo = async (event) => {
 
         console.log(options);
 
-        // Hae data
         const response = await fetchData(url, options);
 
         if (response.error) {
@@ -329,11 +295,12 @@ const updateUserInfo = async (event) => {
 
         if (response.message) {
             console.log(response.message, 'success');
+            alert('Resepti poistettu.')
         }
 
         console.log('Poistettu' + response);
       } else {
-        console.log('Delete cancelled!')
+        console.log('Poisto peruttu!')
       }
 
 };

@@ -8,7 +8,6 @@ const registerEntry = async (event) => {
     const entryForm = document.querySelector('.input-measurement-entry');
 
     //GET VALUES
-    const m_taken = entryForm.querySelector('#time-id').value.trim();
     const readiness = entryForm.querySelector('#readiness-id').value.trim();
     const bpm = entryForm.querySelector('#bpm-id').value.trim();
     const rmssd = entryForm.querySelector('#rmssd-id').value.trim();
@@ -21,7 +20,6 @@ const registerEntry = async (event) => {
 
     // ENTRY DATA FOR REQUEST
     const bodyData = {
-        m_taken: m_taken,
         readiness: readiness,
         bpm: bpm,
         rmssd: rmssd,
@@ -47,7 +45,6 @@ const registerEntry = async (event) => {
         'Content-type': 'application/json',
         },
     };
-    console.log(options);
 
     // SEND REQUEST FOR POSTING DATA
     const response = await fetchData(url, options);
@@ -55,21 +52,19 @@ const registerEntry = async (event) => {
     if (response.error) {
         console.error('ADDING ENTRY FAILED:', response.error);
         return;
+      } else {
+        alert('Mittaus tallennettu.')
       }
     
-    console.log(response);
     entryForm.reset();
 }
 
 const getUserEntries = async () => {
-    // Endpoint
+
     const url = 'http://localhost:3000/api/entries';
 
-    // Nyt haetaan token local Storagelta
     let token = localStorage.getItem('token');
-    console.log('tokeni on : ' + token)
 
-    // Options
     const options = {
         headers: {
             'Authorization': `Bearer ${token}`,
@@ -78,7 +73,6 @@ const getUserEntries = async () => {
 
     console.log(options);
 
-    // Hae data
     const response = await fetchData(url, options);
 
     if (response.error) {
@@ -101,7 +95,7 @@ const getUserEntries = async () => {
             const row = document.createElement('tr');
             row.innerHTML = `
             <td>${nro+1}</td>
-            <td>${res.m_taken}</td>
+            <td>${res.created_at}</td>
             <td><button class="check" data-id='${res.entry_id}'>MITTAUS ${nro+1}</button></td>
             <td><button class="delete-m" data-id="${res.entry_id}">POISTA</button></td>
             `;
@@ -109,8 +103,6 @@ const getUserEntries = async () => {
         tableBody.appendChild(row);
         localStorage.setItem(`set_entry ${nro+1}`, res.entry_id);
 
-        //const entryRow = document.querySelector(`#result-${nro+1}`)
-        //entryRow.addEventListener('click', printEntry);
         nro += 1;
         });
 
@@ -121,7 +113,6 @@ const getUserEntries = async () => {
     //GET ENTRY ID FOR OPENING A RESULT
     const addEventListenersOpen = () => {
         const nappulat = document.querySelectorAll('.check');
-        console.log(nappulat);
         nappulat.forEach((button) => {
           button.addEventListener('click', async (event) => {
             console.log('Klikkasit nappulaa:', event.target);
@@ -135,7 +126,6 @@ const getUserEntries = async () => {
       //GET ENTRY ID FOR DELETING A RESULT
       const addEventListenersDel = () => {
         const nappulat = document.querySelectorAll('.delete-m');
-        console.log(nappulat);
         nappulat.forEach((button) => {
           button.addEventListener('click', async (event) => {
             console.log('Klikkasit nappulaa:', event.target);
@@ -149,17 +139,11 @@ const getUserEntries = async () => {
   // PRINT A SPECIFIC MEASUREMENT
 
   const printEntry = async (entry) => {
-    //console.log('onko oikein' +  entry)
 
     let token = localStorage.getItem('token');
 
-    //PITÄÄ SYÖTTÄÄ ENTRY_ID clientille.
     const url = `http://localhost:3000/api/entries/${entry}`;
 
-    // Nyt haetaan token local Storagelta
-    console.log('tokeni on : ' + token)
-
-    // Options
     const options = {
         headers: {
             'Authorization': `Bearer ${token}`,
@@ -168,7 +152,6 @@ const getUserEntries = async () => {
 
     console.log(options);
 
-    // Hae data
     const response = await fetchData(url, options);
 
     if (response.error) {
@@ -179,8 +162,6 @@ const getUserEntries = async () => {
     if (response.message) {
         console.log(response.message, 'success');
     }
-
-    console.log('TÄTÄ ETSIT!!!!!!!' + response);
 
     const resultModule = document.querySelector('#diary-box');
     resultModule.style.display = 'block';
@@ -196,7 +177,7 @@ const getUserEntries = async () => {
         const row = document.createElement('p');
         row.style.padding = '1em';
         row.innerHTML = `
-        <p>Mittaus syötetty : ${res.m_taken}</p>
+        <p>Mittaus syötetty : ${res.created_at}</p>
         <p>Valmiusprosentti : ${res.readiness} %</p>
         <p>Pulssi : ${res.bpm} bpm</p>
         <p>RMSSD : ${res.rmssd} ms</p>
@@ -226,20 +207,17 @@ const getUserEntries = async () => {
   // DELETE A SPECIFIC MEASUREMENT
 
   const deleteEntry = async (entry) => {
-    //console.log('onko oikein' +  entry)
 
     let token = localStorage.getItem('token');
 
     let text = "Oletko varma, että mittaus poistetaan ?\n Paina 'OK' tai 'Cancel'.";
     if (confirm(text) == true) {
         text = "You pressed OK!";
-        //PITÄÄ SYÖTTÄÄ ENTRY_ID clientille.
+  
         const url = `http://localhost:3000/api/entries/del/${entry}`;
 
-        // Nyt haetaan token local Storagelta
         console.log('tokeni on : ' + token)
 
-        // Options
         const options = {
             method: 'DELETE',
             headers: {
@@ -249,7 +227,6 @@ const getUserEntries = async () => {
 
         console.log(options);
 
-        // Hae data
         const response = await fetchData(url, options);
 
         if (response.error) {
@@ -259,22 +236,20 @@ const getUserEntries = async () => {
 
         if (response.message) {
             console.log(response.message, 'success');
+            alert('Mittaus poistettu.')
         }
-
         console.log('Poistettu' + response);
+        alert('Mittaus poistettu.')
       } else {
         console.log('Delete cancelled!')
       }
 
 };
 
-/*  
-*/
 
 getUserEntries();
 
 const entryForm = document.querySelector('#post-m');
 entryForm.addEventListener('click', registerEntry);
 
-/**/
 printEntry();
