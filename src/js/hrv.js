@@ -95,7 +95,8 @@ const getUserEntries = async () => {
             const row = document.createElement('tr');
             row.innerHTML = `
             <td>${nro+1}</td>
-            <td>${res.created_at}</td>
+            <td>${new Date(res.created_at).toLocaleDateString("fi-FI")}</td>
+            <td>${new Date(res.created_at).toLocaleTimeString("fi-FI")}</td>
             <td><button class="check" data-id='${res.entry_id}'>MITTAUS ${nro+1}</button></td>
             <td><button class="delete-m" data-id="${res.entry_id}">POISTA</button></td>
             `;
@@ -177,7 +178,7 @@ const getUserEntries = async () => {
         const row = document.createElement('p');
         row.style.padding = '1em';
         row.innerHTML = `
-        <p>Mittaus syötetty : ${res.created_at}</p>
+        <p>Mittaus syötetty : ${new Date(res.created_at).toLocaleDateString("fi-FI")}</p>
         <p>Valmiusprosentti : ${res.readiness} %</p>
         <p>Pulssi : ${res.bpm} bpm</p>
         <p>RMSSD : ${res.rmssd} ms</p>

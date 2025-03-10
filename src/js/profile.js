@@ -59,7 +59,7 @@ const getUserProfile = async () => {
 
     const profileCreated = document.querySelector('#user-created');
     const created = document.createElement('p');
-    created.innerHTML = `Profiili luotu: ${response.created_at}`;
+    created.innerHTML = `Profiili luotu: ${new Date(response.created_at).toLocaleDateString("fi-FI")}`;
 
     profileUsername.appendChild(username);
     profileEmail.appendChild(email);
@@ -226,8 +226,8 @@ const updateUserInfo = async (event) => {
               <td>${nro+1}</td>
               <td>${res.name}</td>
               <td>${res.dosage}</td>
-              <td>${res.start_date}</td>
-              <td>${res.end_date}</td>
+              <td> ${new Date(res.start_date).toLocaleDateString("fi-FI")}</td>
+              <td>${new Date(res.end_date).toLocaleDateString("fi-FI")}</td>
               <td>${res.extra}</td>
               <td><button class="delete-m" data-id="${res.medication_id}">POISTA</button></td>
               `;
