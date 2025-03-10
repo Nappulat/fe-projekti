@@ -128,6 +128,10 @@
         height: 90vh;
     }
 
+    header {
+        margin-bottom: 4em;
+    }
+
     footer p {
         font-size: 2vw;
     }
@@ -137,6 +141,10 @@
 @media screen and (max-width: 870px) {
     main {
         height: auto;
+    }
+
+    header {
+        margin-bottom: 0;
     }
 
     .hrv-input-form {
