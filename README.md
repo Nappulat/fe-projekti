@@ -1,6 +1,9 @@
 ## Testit
 outputs-kansio --> [outputs](outputs/)
 tests-kansio --> [tests](tests/)
+[docs](docs/)
+[loki](docs/log.html)
+[loki](docs/report.html)
 
 ## Kuvat
 public-kansio --> [public](public/)
