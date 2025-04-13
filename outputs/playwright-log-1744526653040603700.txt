@@ -1,0 +1,34 @@
+{"level":30,"time":"2025-04-13T06:44:13.597Z","pid":5992,"hostname":"Asus","msg":"Listening on 59884"}
+(node:5992) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-13T06:44:13.678Z","pid":5992,"hostname":"Asus","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-13T06:44:13.829Z","pid":5992,"hostname":"Asus","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-13T06:44:13.830Z","pid":5992,"hostname":"Asus","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-13T06:44:13.830Z","pid":5992,"hostname":"Asus","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-13T06:44:13.844Z","pid":5992,"hostname":"Asus","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-13T06:44:13.845Z","pid":5992,"hostname":"Asus","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-13T06:44:13.866Z","pid":5992,"hostname":"Asus","msg":"Changed active context"}
+{"level":30,"time":"2025-04-13T06:44:14.053Z","pid":5992,"hostname":"Asus","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-13T06:44:14.054Z","pid":5992,"hostname":"Asus","msg":"Changed active page"}
+{"level":30,"time":"2025-04-13T06:44:14.135Z","pid":5992,"hostname":"Asus","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-13T06:44:14.172Z","pid":5992,"hostname":"Asus","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-13T06:44:14.172Z","pid":5992,"hostname":"Asus","msg":"Strict mode is enabled, find Locator with [name=\"username\"] in page."}
+{"level":30,"time":"2025-04-13T06:44:15.638Z","pid":5992,"hostname":"Asus","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-13T06:44:15.645Z","pid":5992,"hostname":"Asus","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-13T06:44:15.645Z","pid":5992,"hostname":"Asus","msg":"Strict mode is enabled, find Locator with [name=\"password\"] in page."}
+{"level":30,"time":"2025-04-13T06:44:17.051Z","pid":5992,"hostname":"Asus","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-13T06:44:17.058Z","pid":5992,"hostname":"Asus","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-13T06:44:17.058Z","pid":5992,"hostname":"Asus","msg":"Strict mode is enabled, find Locator with input.loginform in page."}
+{"level":30,"time":"2025-04-13T06:44:19.106Z","pid":5992,"hostname":"Asus","msg":"End of node method click"}
+================= Original suppressed error =================
+page.title: Execution context was destroyed, most likely because of a navigation
+    at getTitle (C:\Users\Omistaja\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11518:28)
+    at PlaywrightServer.getTitle (C:\Users\Omistaja\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13375:30)
+    at Object.onReceiveHalfClose (C:\Users\Omistaja\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Omistaja\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Omistaja\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Omistaja\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-04-13T06:44:24.506Z","pid":5992,"hostname":"Asus","msg":"Removed page=73511bb0-39bd-45bd-ac61-49f6074c13fa from context=c11a4512-435a-4eb5-ac08-592cc693b376 page stack"}

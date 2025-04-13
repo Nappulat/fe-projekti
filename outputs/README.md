@@ -1,0 +1,11 @@
+loki --> [log.html](log.html)
+output --> [output.xml](output.xml)
+raportti --> [report.html](report.html)
+
+[txt](playwright-log-1744526371108914000.txt)
+[txt](playwright-log-1744526406088135900.txt)
+[txt](playwright-log-1744526452468847600.txt)
+[txt](playwright-log-1744526525670377100.txt)
+[txt](playwright-log-1744526604246682100.txt)
+[txt](playwright-log-1744526653040603700.txt)
+[playwight-log](playwright-log.txt)

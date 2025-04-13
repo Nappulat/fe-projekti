@@ -1,0 +1,6 @@
+[asennustesti.py](asennustesti.py)
+[assignment_2.robot](assignment_2.robot)
+[assignment_3.robot](assignment_3.robot)
+[assignment_4.robot](assignment_4.robot)
+[assignment_5.robot](assignment_5.robot)
+[assignment_6.robot](assignment_6.robot)

@@ -1,0 +1,14 @@
+{"level":30,"time":"2025-04-13T06:42:06.245Z","pid":17520,"hostname":"Asus","msg":"Listening on 59343"}
+(node:17520) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-13T06:42:06.318Z","pid":17520,"hostname":"Asus","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-13T06:42:06.482Z","pid":17520,"hostname":"Asus","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-13T06:42:06.482Z","pid":17520,"hostname":"Asus","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-13T06:42:06.482Z","pid":17520,"hostname":"Asus","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-13T06:42:06.491Z","pid":17520,"hostname":"Asus","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-13T06:42:06.491Z","pid":17520,"hostname":"Asus","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-13T06:42:06.504Z","pid":17520,"hostname":"Asus","msg":"Changed active context"}
+{"level":30,"time":"2025-04-13T06:42:06.684Z","pid":17520,"hostname":"Asus","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-13T06:42:06.685Z","pid":17520,"hostname":"Asus","msg":"Changed active page"}
+{"level":30,"time":"2025-04-13T06:42:06.802Z","pid":17520,"hostname":"Asus","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-13T06:42:14.871Z","pid":17520,"hostname":"Asus","msg":"Removed page=50a2bdce-db20-4cd8-bd55-da6ca30e6a58 from context=280eceb6-9d34-4bf3-9ff8-94df367327de page stack"}
