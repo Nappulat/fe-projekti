@@ -1,0 +1,38 @@
+{"level":30,"time":"2025-04-15T14:13:10.964Z","pid":16964,"hostname":"Asus","msg":"Listening on 58230"}
+(node:16964) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-15T14:13:11.033Z","pid":16964,"hostname":"Asus","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-15T14:13:11.226Z","pid":16964,"hostname":"Asus","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-15T14:13:11.226Z","pid":16964,"hostname":"Asus","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-15T14:13:11.226Z","pid":16964,"hostname":"Asus","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-15T14:13:11.232Z","pid":16964,"hostname":"Asus","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-15T14:13:11.232Z","pid":16964,"hostname":"Asus","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-15T14:13:11.245Z","pid":16964,"hostname":"Asus","msg":"Changed active context"}
+{"level":30,"time":"2025-04-15T14:13:11.361Z","pid":16964,"hostname":"Asus","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-15T14:13:11.362Z","pid":16964,"hostname":"Asus","msg":"Changed active page"}
+{"level":30,"time":"2025-04-15T14:13:11.421Z","pid":16964,"hostname":"Asus","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-15T14:13:11.438Z","pid":16964,"hostname":"Asus","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-15T14:13:11.438Z","pid":16964,"hostname":"Asus","msg":"Strict mode is enabled, find Locator with [name=\"username\"] in page."}
+{"level":30,"time":"2025-04-15T14:13:12.862Z","pid":16964,"hostname":"Asus","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-15T14:13:12.867Z","pid":16964,"hostname":"Asus","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-15T14:13:12.867Z","pid":16964,"hostname":"Asus","msg":"Strict mode is enabled, find Locator with [name=\"password\"] in page."}
+{"level":30,"time":"2025-04-15T14:13:14.279Z","pid":16964,"hostname":"Asus","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-15T14:13:14.287Z","pid":16964,"hostname":"Asus","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-15T14:13:14.287Z","pid":16964,"hostname":"Asus","msg":"Strict mode is enabled, find Locator with input.loginform in page."}
+{"level":30,"time":"2025-04-15T14:13:16.347Z","pid":16964,"hostname":"Asus","msg":"End of node method click"}
+{"level":30,"time":"2025-04-15T14:13:16.781Z","pid":16964,"hostname":"Asus","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-15T14:13:16.793Z","pid":16964,"hostname":"Asus","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-15T14:13:16.798Z","pid":16964,"hostname":"Asus","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-15T14:13:16.803Z","pid":16964,"hostname":"Asus","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-15T14:13:16.805Z","pid":16964,"hostname":"Asus","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-15T14:13:16.807Z","pid":16964,"hostname":"Asus","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-15T14:13:16.810Z","pid":16964,"hostname":"Asus","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-15T14:13:16.812Z","pid":16964,"hostname":"Asus","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-15T14:13:16.815Z","pid":16964,"hostname":"Asus","msg":"Changed active context"}
+{"level":30,"time":"2025-04-15T14:13:16.815Z","pid":16964,"hostname":"Asus","msg":"Changing current active page: page=baf9deaa-f12b-45e1-bb86-59ad8f2d4cfc"}
+{"level":30,"time":"2025-04-15T14:13:16.815Z","pid":16964,"hostname":"Asus","msg":"Changed active page"}
+{"level":30,"time":"2025-04-15T14:13:16.819Z","pid":16964,"hostname":"Asus","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-04-15T14:13:16.829Z","pid":16964,"hostname":"Asus","msg":"Removed page=52ab4526-ed0d-4c9d-bb01-d601ec45533d from context=2fd8cd15-1bbe-4437-b287-5b3189e9624f page stack"}
+{"level":30,"time":"2025-04-15T14:13:16.869Z","pid":16964,"hostname":"Asus","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-04-15T14:13:19.732Z","pid":16964,"hostname":"Asus","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-15T14:13:19.947Z","pid":16964,"hostname":"Asus","msg":"End of node method closeAllBrowsers"}

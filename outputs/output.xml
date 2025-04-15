@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.1 on win32)" generated="2025-04-13T10:13:12.530334" rpa="false" schemaversion="5">
-<suite id="s1" name="Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5">
-<suite id="s1-s1" name="Assignment 2" source="C:\Users\Omistaja\Documents\hyte\fe-projekti – kopio\vite-project\tests\assignment_2.robot">
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-04-15T17:12:24.019906" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5 &amp; Assignment 6 &amp; Assignment 9 New">
+<suite id="s1-s1" name="Assignment 2" source="C:\Users\Omistaja\Documents\hyte\sovellustesti\tests\assignment_2.robot">
 <test id="s1-s1-t1" name="Login Test" line="6">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-13T10:13:12.725358" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Omistaja\\Documents\\hyte\\fe-projekti \u2013 kopio\\vite-project\\outputs\\browser\\traces\\temp\\5f5ebc03-5ffb-4bc9-ade4-d317b2058334"}</msg>
-<msg time="2025-04-13T10:13:12.759740" level="INFO">Starting Browser process C:\Users\Omistaja\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using port 51142</msg>
-<msg time="2025-04-13T10:13:12.759740" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Omistaja\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js', '51142']</msg>
-<msg time="2025-04-13T10:13:13.609989" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Omistaja\\Documents\\hyte\\fe-projekti – kopio\\vite-project\\outputs\\browser\\traces\\temp\\5f5ebc03-5ffb-4bc9-ade4-d317b2058334"}</msg>
+<msg time="2025-04-15T17:12:24.169280" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Omistaja\\Documents\\hyte\\sovellustesti\\outputs\\browser\\traces\\temp\\03c8cf3d-a83d-499e-a53e-c12374f761db"}</msg>
+<msg time="2025-04-15T17:12:24.192569" level="INFO">Starting Browser process C:\Users\Omistaja\Documents\hyte\sovellustesti\.venv\Lib\site-packages\Browser\wrapper\index.js using port 57965</msg>
+<msg time="2025-04-15T17:12:24.192703" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Omistaja\\Documents\\hyte\\sovellustesti\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '57965']</msg>
+<msg time="2025-04-15T17:12:25.164360" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Omistaja\\Documents\\hyte\\sovellustesti\\outputs\\browser\\traces\\temp\\03c8cf3d-a83d-499e-a53e-c12374f761db"}</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-13T10:13:12.725358" elapsed="0.884631"/>
+<status status="PASS" start="2025-04-15T17:12:24.168702" elapsed="0.995916"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-13T10:13:13.886019" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173</msg>
-<msg time="2025-04-13T10:13:13.886019" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-04-15T17:12:25.358443" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173</msg>
+<msg time="2025-04-15T17:12:25.358525" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>http://localhost:5173</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-13T10:13:13.610947" elapsed="0.275072"/>
+<status status="PASS" start="2025-04-15T17:12:25.165119" elapsed="0.193634"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-13T10:13:13.898232" level="INFO">Title: 'Projekti-kirjautuminen'</msg>
+<msg time="2025-04-15T17:12:25.368917" level="INFO">Title: 'Projekti-kirjautuminen'</msg>
 <arg>==</arg>
 <arg>Projekti-kirjautuminen</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-13T10:13:13.888027" elapsed="0.010205"/>
+<status status="PASS" start="2025-04-15T17:12:25.359231" elapsed="0.009795"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:13.898232" level="INFO">Types the text 'projektidemo' in the given field.</msg>
+<msg time="2025-04-15T17:12:25.370027" level="INFO">Types the text 'projektidemo' in the given field.</msg>
 <arg>[name="username"]</arg>
 <arg>${Username}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:13.898232" elapsed="1.417503"/>
+<status status="PASS" start="2025-04-15T17:12:25.369471" elapsed="1.425281"/>
 </kw>
 <kw name="Type Secret" owner="Browser">
 <arg>[name="password"]</arg>
@@ -52,72 +52,72 @@
 <tag>Setter</tag>
 <doc>Types the given secret from ``variable_name`` into the text field
 found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:15.315735" elapsed="1.362322"/>
+<status status="PASS" start="2025-04-15T17:12:26.795573" elapsed="1.430462"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:16.680068" level="INFO">Clicks the element 'input.loginform'.</msg>
+<msg time="2025-04-15T17:12:28.227476" level="INFO">Clicks the element 'input.loginform'.</msg>
 <arg>input.loginform</arg>
 <arg>delay=2 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:16.680068" elapsed="2.051870"/>
+<status status="PASS" start="2025-04-15T17:12:28.226716" elapsed="2.064962"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-13T10:13:19.177126" level="INFO">Title: 'Projekti-etusivu'</msg>
+<msg time="2025-04-15T17:12:30.743538" level="INFO">Title: 'Projekti-etusivu'</msg>
 <arg>==</arg>
 <arg>Projekti-etusivu</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-13T10:13:18.731938" elapsed="0.445188"/>
+<status status="PASS" start="2025-04-15T17:12:30.292158" elapsed="0.451559"/>
 </kw>
-<msg time="2025-04-13T10:13:19.192332" level="INFO">Set timeout to: 10000</msg>
-<status status="PASS" start="2025-04-13T10:13:12.725358" elapsed="6.464968"/>
+<msg time="2025-04-15T17:12:30.747600" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" start="2025-04-15T17:12:24.167827" elapsed="6.576327"/>
 </test>
-<status status="PASS" start="2025-04-13T10:13:12.558835" elapsed="6.637511"/>
+<status status="PASS" start="2025-04-15T17:12:24.041568" elapsed="6.707012"/>
 </suite>
-<suite id="s1-s2" name="Assignment 3" source="C:\Users\Omistaja\Documents\hyte\fe-projekti – kopio\vite-project\tests\assignment_3.robot">
+<suite id="s1-s2" name="Assignment 3" source="C:\Users\Omistaja\Documents\hyte\sovellustesti\tests\assignment_3.robot">
 <test id="s1-s2-t1" name="Test Web Form" line="6">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-13T10:13:19.215829" level="INFO">Switching browser to browser=0e018cc8-5abc-4b5c-bc89-1c4e5612a74a</msg>
-<msg time="2025-04-13T10:13:19.224727" level="INFO">Successfully changed active browser: browser=0e018cc8-5abc-4b5c-bc89-1c4e5612a74a</msg>
-<msg time="2025-04-13T10:13:19.224727" level="INFO">Reusing existing browser with id: browser=0e018cc8-5abc-4b5c-bc89-1c4e5612a74a</msg>
+<msg time="2025-04-15T17:12:30.759367" level="INFO">Switching browser to browser=9e3a4c00-b220-4b80-9260-9b2ef786d3aa</msg>
+<msg time="2025-04-15T17:12:30.762418" level="INFO">Successfully changed active browser: browser=9e3a4c00-b220-4b80-9260-9b2ef786d3aa</msg>
+<msg time="2025-04-15T17:12:30.762533" level="INFO">Reusing existing browser with id: browser=9e3a4c00-b220-4b80-9260-9b2ef786d3aa</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-13T10:13:19.215829" elapsed="0.008898"/>
+<status status="PASS" start="2025-04-15T17:12:30.758698" elapsed="0.003908"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-13T10:13:20.128442" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<msg time="2025-04-15T17:12:31.824820" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
 <arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-13T10:13:19.225377" elapsed="0.903065"/>
+<status status="PASS" start="2025-04-15T17:12:30.763010" elapsed="1.062115"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-13T10:13:20.136866" level="INFO">Title: 'Web form'</msg>
+<msg time="2025-04-15T17:12:31.833934" level="INFO">Title: 'Web form'</msg>
 <arg>==</arg>
 <arg>Web form</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-13T10:13:20.130450" elapsed="0.006416"/>
+<status status="PASS" start="2025-04-15T17:12:31.825795" elapsed="0.008332"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:20.136866" level="INFO">Types the text 'some@example.com' in the given field.</msg>
+<msg time="2025-04-15T17:12:31.835466" level="INFO">Types the text 'some@example.com' in the given field.</msg>
 <arg>[name="my-text"]</arg>
 <arg>${Username}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:20.136866" elapsed="1.894360"/>
+<status status="PASS" start="2025-04-15T17:12:31.834717" elapsed="1.895529"/>
 </kw>
 <kw name="Type Secret" owner="Browser">
 <arg>[name="my-password"]</arg>
@@ -127,28 +127,28 @@ found by ``selector``.</doc>
 <tag>Setter</tag>
 <doc>Types the given secret from ``variable_name`` into the text field
 found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:22.031226" elapsed="1.458337"/>
+<status status="PASS" start="2025-04-15T17:12:33.730790" elapsed="1.436512"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:23.491579" level="INFO">Types the text 'Hi!' in the given field.</msg>
+<msg time="2025-04-15T17:12:35.169814" level="INFO">Types the text 'Hi!' in the given field.</msg>
 <arg>[name="my-textarea"]</arg>
 <arg>${Message}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:23.491579" elapsed="0.347942"/>
+<status status="PASS" start="2025-04-15T17:12:35.168226" elapsed="0.362545"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:23.839521" level="INFO">Clicks the element 'select.form-select'.</msg>
+<msg time="2025-04-15T17:12:35.532605" level="INFO">Clicks the element 'select.form-select'.</msg>
 <arg>${dropdown-1}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:23.839521" elapsed="0.061068"/>
+<status status="PASS" start="2025-04-15T17:12:35.531586" elapsed="0.049678"/>
 </kw>
 <kw name="Get Select Options" owner="Browser">
-<msg time="2025-04-13T10:13:23.937750" level="INFO">entry {
+<msg time="2025-04-15T17:12:35.631511" level="INFO">entry {
   value: "Open this select menu"
   label: "Open this select menu"
   selected: true
@@ -169,42 +169,42 @@ entry {
   index: 3
 }
 </msg>
-<msg time="2025-04-13T10:13:23.937750" level="INFO">${all_options} = [{'index': 0, 'value': 'Open this select menu', 'label': 'Open this select menu', 'selected': True}, {'index': 1, 'value': '1', 'label': 'One', 'selected': False}, {'index': 2, 'value': '2', 'label': ...</msg>
+<msg time="2025-04-15T17:12:35.632014" level="INFO">${all_options} = [{'index': 0, 'value': 'Open this select menu', 'label': 'Open this select menu', 'selected': True}, {'index': 1, 'value': '1', 'label': 'One', 'selected': False}, {'index': 2, 'value': '2', 'label': ...</msg>
 <var>${all_options}</var>
 <arg>${dropdown-1}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns attributes of options of a ``select`` element as a list of dictionaries.</doc>
-<status status="PASS" start="2025-04-13T10:13:23.909550" elapsed="0.028200"/>
+<status status="PASS" start="2025-04-15T17:12:35.581928" elapsed="0.050146"/>
 </kw>
 <kw name="Select Options By" owner="Browser">
-<msg time="2025-04-13T10:13:23.937750" level="INFO">Selects the option(s) 3 by attribute SelectAttribute.value from element select.form-select.</msg>
+<msg time="2025-04-15T17:12:35.633875" level="INFO">Selects the option(s) 3 by attribute SelectAttribute.value from element select.form-select.</msg>
 <arg>${dropdown-1}</arg>
 <arg>value</arg>
 <arg>3</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:23.937750" elapsed="0.020629"/>
+<status status="PASS" start="2025-04-15T17:12:35.632768" elapsed="0.030023"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:23.958379" level="INFO">Clicks the element 'xpath=//input[@list="my-options"]'.</msg>
+<msg time="2025-04-15T17:12:35.664264" level="INFO">Clicks the element 'xpath=//input[@list="my-options"]'.</msg>
 <arg>${dropdown-2}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:23.958379" elapsed="0.067144"/>
+<status status="PASS" start="2025-04-15T17:12:35.663527" elapsed="0.067431"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:24.025523" level="INFO">Types the text 'New York' in the given field.</msg>
+<msg time="2025-04-15T17:12:35.732781" level="INFO">Types the text 'New York' in the given field.</msg>
 <arg>${dropdown-2}</arg>
 <arg>New York</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:24.025523" elapsed="0.958691"/>
+<status status="PASS" start="2025-04-15T17:12:35.731569" elapsed="0.949959"/>
 </kw>
 <kw name="Upload File By Selector" owner="Browser">
 <arg>//input[@type='file']</arg>
@@ -212,33 +212,33 @@ entry {
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Uploads file from ``path`` to file input element matched by selector.</doc>
-<status status="PASS" start="2025-04-13T10:13:24.984214" elapsed="0.027118"/>
+<status status="PASS" start="2025-04-15T17:12:36.682085" elapsed="0.018502"/>
 </kw>
 <kw name="Uncheck Checkbox" owner="Browser">
 <arg>id=my-check-1</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Unchecks the checkbox found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:25.011332" elapsed="0.048314"/>
+<status status="PASS" start="2025-04-15T17:12:36.701199" elapsed="0.041733"/>
 </kw>
 <kw name="Check Checkbox" owner="Browser">
 <arg>id=my-check-2</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:25.061658" elapsed="0.040278"/>
+<status status="PASS" start="2025-04-15T17:12:36.743462" elapsed="0.046766"/>
 </kw>
 <kw name="Check Checkbox" owner="Browser">
 <arg>id=my-radio-2</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:25.101936" elapsed="0.060641"/>
+<status status="PASS" start="2025-04-15T17:12:36.790687" elapsed="0.049630"/>
 </kw>
 <kw name="Drag And Drop Relative To" owner="Browser">
-<msg time="2025-04-13T10:13:25.174339" level="INFO">Moving mouse to x: 1020.0, y: 242.0 coordinates.</msg>
-<msg time="2025-04-13T10:13:25.187745" level="INFO">Moving mouse to x: 920.0, y: 242.0 coordinates.</msg>
-<msg time="2025-04-13T10:13:30.185133" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<msg time="2025-04-15T17:12:36.857125" level="INFO">Moving mouse to x: 1020.0, y: 242.0 coordinates.</msg>
+<msg time="2025-04-15T17:12:36.873203" level="INFO">Moving mouse to x: 920.0, y: 242.0 coordinates.</msg>
+<msg time="2025-04-15T17:12:41.869046" level="INFO">No coordinates where set. Action appears at current position.</msg>
 <arg>[type="range"]</arg>
 <arg>-100</arg>
 <arg>0</arg>
@@ -247,19 +247,19 @@ entry {
 <tag>Setter</tag>
 <doc>Executes a Drag&amp;Drop operation from the element selected by ``selector_from``
 to coordinates relative to the center of that element.</doc>
-<status status="PASS" start="2025-04-13T10:13:25.162577" elapsed="5.027255"/>
+<status status="PASS" start="2025-04-15T17:12:36.840945" elapsed="5.034934"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:30.191004" level="INFO">Clicks the element 'button'.</msg>
+<msg time="2025-04-15T17:12:41.877281" level="INFO">Clicks the element 'button'.</msg>
 <arg>button</arg>
 <arg>delay=2 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:30.191004" elapsed="2.400740"/>
+<status status="PASS" start="2025-04-15T17:12:41.876472" elapsed="2.326757"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-04-13T10:13:32.625576" level="INFO">Text: 'Received!'</msg>
+<msg time="2025-04-15T17:12:44.243558" level="INFO">Text: 'Received!'</msg>
 <arg>id=message</arg>
 <arg>==</arg>
 <arg>Received!</arg>
@@ -267,53 +267,53 @@ to coordinates relative to the center of that element.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:32.591744" elapsed="0.033832"/>
+<status status="PASS" start="2025-04-15T17:12:44.204231" elapsed="0.039474"/>
 </kw>
-<msg time="2025-04-13T10:13:32.628959" level="INFO">Set timeout to: 10000</msg>
-<status status="PASS" start="2025-04-13T10:13:19.214652" elapsed="13.414307"/>
+<msg time="2025-04-15T17:12:44.247055" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" start="2025-04-15T17:12:30.758104" elapsed="13.486134"/>
 </test>
-<status status="PASS" start="2025-04-13T10:13:19.199159" elapsed="13.434506"/>
+<status status="PASS" start="2025-04-15T17:12:30.752344" elapsed="13.496047"/>
 </suite>
-<suite id="s1-s3" name="Assignment 4" source="C:\Users\Omistaja\Documents\hyte\fe-projekti – kopio\vite-project\tests\assignment_4.robot">
+<suite id="s1-s3" name="Assignment 4" source="C:\Users\Omistaja\Documents\hyte\sovellustesti\tests\assignment_4.robot">
 <test id="s1-s3-t1" name="Test 4" line="6">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-13T10:13:32.642882" level="INFO">Switching browser to browser=0e018cc8-5abc-4b5c-bc89-1c4e5612a74a</msg>
-<msg time="2025-04-13T10:13:32.645775" level="INFO">Successfully changed active browser: browser=0e018cc8-5abc-4b5c-bc89-1c4e5612a74a</msg>
-<msg time="2025-04-13T10:13:32.645775" level="INFO">Reusing existing browser with id: browser=0e018cc8-5abc-4b5c-bc89-1c4e5612a74a</msg>
+<msg time="2025-04-15T17:12:44.259545" level="INFO">Switching browser to browser=9e3a4c00-b220-4b80-9260-9b2ef786d3aa</msg>
+<msg time="2025-04-15T17:12:44.262626" level="INFO">Successfully changed active browser: browser=9e3a4c00-b220-4b80-9260-9b2ef786d3aa</msg>
+<msg time="2025-04-15T17:12:44.262780" level="INFO">Reusing existing browser with id: browser=9e3a4c00-b220-4b80-9260-9b2ef786d3aa</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-13T10:13:32.641983" elapsed="0.003792"/>
+<status status="PASS" start="2025-04-15T17:12:44.258947" elapsed="0.003925"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-13T10:13:32.744204" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173</msg>
+<msg time="2025-04-15T17:12:44.385670" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173</msg>
 <arg>http://localhost:5173</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-13T10:13:32.645775" elapsed="0.098429"/>
+<status status="PASS" start="2025-04-15T17:12:44.263354" elapsed="0.122610"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-13T10:13:32.750521" level="INFO">Title: 'Projekti-kirjautuminen'</msg>
+<msg time="2025-04-15T17:12:44.395600" level="INFO">Title: 'Projekti-kirjautuminen'</msg>
 <arg>==</arg>
 <arg>Projekti-kirjautuminen</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-13T10:13:32.745678" elapsed="0.004843"/>
+<status status="PASS" start="2025-04-15T17:12:44.386426" elapsed="0.009282"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:32.750521" level="INFO">Types the text 'projektidemo' in the given field.</msg>
+<msg time="2025-04-15T17:12:44.396814" level="INFO">Types the text 'projektidemo' in the given field.</msg>
 <arg>[name="username"]</arg>
 <arg>${Username}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:32.750521" elapsed="1.427545"/>
+<status status="PASS" start="2025-04-15T17:12:44.396001" elapsed="1.416991"/>
 </kw>
 <kw name="Type Secret" owner="Browser">
 <arg>[name="password"]</arg>
@@ -323,254 +323,254 @@ to coordinates relative to the center of that element.</doc>
 <tag>Setter</tag>
 <doc>Types the given secret from ``variable_name`` into the text field
 found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:34.178636" elapsed="1.381207"/>
+<status status="PASS" start="2025-04-15T17:12:45.813548" elapsed="1.399928"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:35.559843" level="INFO">Clicks the element 'input.loginform'.</msg>
+<msg time="2025-04-15T17:12:47.214910" level="INFO">Clicks the element 'input.loginform'.</msg>
 <arg>input.loginform</arg>
 <arg>delay=2 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:35.559843" elapsed="2.056663"/>
+<status status="PASS" start="2025-04-15T17:12:47.214038" elapsed="2.041129"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-13T10:13:37.761065" level="INFO">Title: 'Projekti-etusivu'</msg>
+<msg time="2025-04-15T17:12:49.365231" level="INFO">Title: 'Projekti-etusivu'</msg>
 <arg>==</arg>
 <arg>Projekti-etusivu</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-13T10:13:37.616506" elapsed="0.144559"/>
+<status status="PASS" start="2025-04-15T17:12:49.255679" elapsed="0.109722"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-13T10:13:37.784939" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-13T10:13:37.784939" level="INFO">${hrv} = xpath=(//a[@href='hrv-mittaukset.html' and text()='HRV mittaukset'])[1]</msg>
+<msg time="2025-04-15T17:12:49.402894" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-15T17:12:49.403213" level="INFO">${hrv} = xpath=(//a[@href='hrv-mittaukset.html' and text()='HRV mittaukset'])[1]</msg>
 <var>${hrv}</var>
 <arg>xpath=(//a[@href='hrv-mittaukset.html' and text()='HRV mittaukset'])[1]</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-13T10:13:37.766089" elapsed="0.018850"/>
+<status status="PASS" start="2025-04-15T17:12:49.365898" elapsed="0.037489"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:37.784939" level="INFO">Clicks the element 'xpath=(//a[@href='hrv-mittaukset.html' and text()='HRV mittaukset'])[1]'.</msg>
+<msg time="2025-04-15T17:12:49.404675" level="INFO">Clicks the element 'xpath=(//a[@href='hrv-mittaukset.html' and text()='HRV mittaukset'])[1]'.</msg>
 <arg>${hrv}</arg>
 <arg>delay=1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:37.784939" elapsed="1.122449"/>
+<status status="PASS" start="2025-04-15T17:12:49.403933" elapsed="1.074193"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:38.921028" level="INFO">Types the text '84' in the given field.</msg>
+<msg time="2025-04-15T17:12:50.480774" level="INFO">Types the text '84' in the given field.</msg>
 <arg>id=readiness-id</arg>
 <arg>${Readiness}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:38.921028" elapsed="0.278866"/>
+<status status="PASS" start="2025-04-15T17:12:50.479158" elapsed="0.302000"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:39.199894" level="INFO">Types the text '65' in the given field.</msg>
+<msg time="2025-04-15T17:12:50.783053" level="INFO">Types the text '65' in the given field.</msg>
 <arg>id=bpm-id</arg>
 <arg>${BPM}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:39.199894" elapsed="0.294072"/>
+<status status="PASS" start="2025-04-15T17:12:50.782041" elapsed="0.264775"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:39.493966" level="INFO">Types the text '45' in the given field.</msg>
+<msg time="2025-04-15T17:12:51.048381" level="INFO">Types the text '45' in the given field.</msg>
 <arg>id=rmssd-id</arg>
 <arg>${RMSSD}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:39.493966" elapsed="0.254980"/>
+<status status="PASS" start="2025-04-15T17:12:51.047383" elapsed="0.265646"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:39.752974" level="INFO">Types the text '0.89' in the given field.</msg>
+<msg time="2025-04-15T17:12:51.314545" level="INFO">Types the text '0.89' in the given field.</msg>
 <arg>id=sns-id</arg>
 <arg>${SNS}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:39.750962" elapsed="0.492001"/>
+<status status="PASS" start="2025-04-15T17:12:51.313575" elapsed="0.484333"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:40.244979" level="INFO">Types the text '0.23' in the given field.</msg>
+<msg time="2025-04-15T17:12:51.799434" level="INFO">Types the text '0.23' in the given field.</msg>
 <arg>id=pns-id</arg>
 <arg>${PNS}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:40.242963" elapsed="0.517641"/>
+<status status="PASS" start="2025-04-15T17:12:51.798636" elapsed="0.497714"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:40.762620" level="INFO">Types the text '8' in the given field.</msg>
+<msg time="2025-04-15T17:12:52.297912" level="INFO">Types the text '8' in the given field.</msg>
 <arg>id=sleep-id</arg>
 <arg>${Hours}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:40.760604" elapsed="0.138740"/>
+<status status="PASS" start="2025-04-15T17:12:52.296990" elapsed="0.151998"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:40.899344" level="INFO">Types the text '27' in the given field.</msg>
+<msg time="2025-04-15T17:12:52.450943" level="INFO">Types the text '27' in the given field.</msg>
 <arg>id=phy-age-id</arg>
 <arg>${Phy-Age}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:40.899344" elapsed="0.259309"/>
+<status status="PASS" start="2025-04-15T17:12:52.449730" elapsed="0.264038"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:41.162685" level="INFO">Types the text 'Relaxed' in the given field.</msg>
+<msg time="2025-04-15T17:12:52.715299" level="INFO">Types the text 'Relaxed' in the given field.</msg>
 <arg>id=mood-id</arg>
 <arg>${Mood}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:41.160673" elapsed="0.831466"/>
+<status status="PASS" start="2025-04-15T17:12:52.714318" elapsed="0.850030"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:41.996162" level="INFO">Types the text 'Spend too much time on homework.' in the given field.</msg>
+<msg time="2025-04-15T17:12:53.566632" level="INFO">Types the text 'Spend too much time on homework.' in the given field.</msg>
 <arg>id=notes-id</arg>
 <arg>${Notes}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:41.996162" elapsed="3.867406"/>
+<status status="PASS" start="2025-04-15T17:12:53.565625" elapsed="3.748692"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:45.863568" level="INFO">Clicks the element '//input[@class='create-m']'.</msg>
+<msg time="2025-04-15T17:12:57.315795" level="INFO">Clicks the element '//input[@class='create-m']'.</msg>
 <arg>//input[@class='create-m']</arg>
 <arg>delay=2 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:45.863568" elapsed="2.089586"/>
+<status status="PASS" start="2025-04-15T17:12:57.314881" elapsed="2.049983"/>
 </kw>
 <kw name="Reload" owner="Browser">
-<msg time="2025-04-13T10:13:48.011780" level="INFO">Reloaded page with options: {"waitUntil": "load"}</msg>
+<msg time="2025-04-15T17:12:59.417900" level="INFO">Reloaded page with options: {"waitUntil": "load"}</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Reloads current active page.</doc>
-<status status="PASS" start="2025-04-13T10:13:47.956387" elapsed="0.056561"/>
+<status status="PASS" start="2025-04-15T17:12:59.365497" elapsed="0.052592"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-13T10:13:48.064910" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-13T10:13:48.064910" level="INFO">${new-entry} = xpath=//button[@class='check' and text()='MITTAUS 1']</msg>
+<msg time="2025-04-15T17:12:59.443068" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-15T17:12:59.443425" level="INFO">${new-entry} = xpath=//button[@class='check' and text()='MITTAUS 1']</msg>
 <var>${new-entry}</var>
 <arg>xpath=//button[@class='check' and text()='MITTAUS 1']</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-13T10:13:48.017353" elapsed="0.047557"/>
+<status status="PASS" start="2025-04-15T17:12:59.418519" elapsed="0.024965"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:48.064910" level="INFO">Clicks the element 'xpath=//button[@class='check' and text()='MITTAUS 1']'.</msg>
+<msg time="2025-04-15T17:12:59.444891" level="INFO">Clicks the element 'xpath=//button[@class='check' and text()='MITTAUS 1']'.</msg>
 <arg>${new-entry}</arg>
 <arg>delay=1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:48.064910" elapsed="1.308193"/>
+<status status="PASS" start="2025-04-15T17:12:59.444060" elapsed="1.414354"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:49.375718" level="INFO">Clicks the element 'xpath=//button[@class='close-result' and text()='Sulje']'.</msg>
+<msg time="2025-04-15T17:13:00.860421" level="INFO">Clicks the element 'xpath=//button[@class='close-result' and text()='Sulje']'.</msg>
 <arg>xpath=//button[@class='close-result' and text()='Sulje']</arg>
 <arg>delay=2 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:49.375167" elapsed="2.056137"/>
+<status status="PASS" start="2025-04-15T17:13:00.858984" elapsed="2.063110"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-13T10:13:51.437325" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-13T10:13:51.438330" level="INFO">${exit} = xpath=(//a[@id='exit-program' and text()='Kirjaudu ulos'])[1]</msg>
+<msg time="2025-04-15T17:13:02.932247" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-15T17:13:02.932519" level="INFO">${exit} = xpath=(//a[@id='exit-program' and text()='Kirjaudu ulos'])[1]</msg>
 <var>${exit}</var>
 <arg>xpath=(//a[@id='exit-program' and text()='Kirjaudu ulos'])[1]</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-13T10:13:51.433311" elapsed="0.005019"/>
+<status status="PASS" start="2025-04-15T17:13:02.922584" elapsed="0.010002"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:51.438907" level="INFO">Clicks the element 'xpath=(//a[@id='exit-program' and text()='Kirjaudu ulos'])[1]'.</msg>
+<msg time="2025-04-15T17:13:02.934304" level="INFO">Clicks the element 'xpath=(//a[@id='exit-program' and text()='Kirjaudu ulos'])[1]'.</msg>
 <arg>${exit}</arg>
 <arg>delay=1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:51.438907" elapsed="1.117242"/>
+<status status="PASS" start="2025-04-15T17:13:02.933155" elapsed="1.068916"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-13T10:13:52.568117" level="INFO">Title: 'Projekti-Kirjauduttu ulos'</msg>
+<msg time="2025-04-15T17:13:04.017151" level="INFO">Title: 'Projekti-Kirjauduttu ulos'</msg>
 <arg>==</arg>
 <arg>Projekti-Kirjauduttu ulos</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-13T10:13:52.562195" elapsed="0.005922"/>
+<status status="PASS" start="2025-04-15T17:13:04.003440" elapsed="0.014023"/>
 </kw>
-<msg time="2025-04-13T10:13:52.568117" level="INFO">Set timeout to: 10000</msg>
-<status status="PASS" start="2025-04-13T10:13:32.641983" elapsed="19.926134"/>
+<msg time="2025-04-15T17:13:04.021653" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" start="2025-04-15T17:12:44.258379" elapsed="19.759845"/>
 </test>
-<status status="PASS" start="2025-04-13T10:13:32.633665" elapsed="19.934452"/>
+<status status="PASS" start="2025-04-15T17:12:44.253164" elapsed="19.770311"/>
 </suite>
-<suite id="s1-s4" name="Assignment 5" source="C:\Users\Omistaja\Documents\hyte\fe-projekti – kopio\vite-project\tests\assignment_5.robot">
+<suite id="s1-s4" name="Assignment 5" source="C:\Users\Omistaja\Documents\hyte\sovellustesti\tests\assignment_5.robot">
 <test id="s1-s4-t1" name="Login Test" line="7">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-13T10:13:52.588737" level="INFO">Switching browser to browser=0e018cc8-5abc-4b5c-bc89-1c4e5612a74a</msg>
-<msg time="2025-04-13T10:13:52.588737" level="INFO">Successfully changed active browser: browser=0e018cc8-5abc-4b5c-bc89-1c4e5612a74a</msg>
-<msg time="2025-04-13T10:13:52.588737" level="INFO">Reusing existing browser with id: browser=0e018cc8-5abc-4b5c-bc89-1c4e5612a74a</msg>
+<msg time="2025-04-15T17:13:04.053995" level="INFO">Switching browser to browser=9e3a4c00-b220-4b80-9260-9b2ef786d3aa</msg>
+<msg time="2025-04-15T17:13:04.059644" level="INFO">Successfully changed active browser: browser=9e3a4c00-b220-4b80-9260-9b2ef786d3aa</msg>
+<msg time="2025-04-15T17:13:04.060011" level="INFO">Reusing existing browser with id: browser=9e3a4c00-b220-4b80-9260-9b2ef786d3aa</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-13T10:13:52.588737" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-15T17:13:04.053344" elapsed="0.006892"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-13T10:13:52.722952" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173</msg>
+<msg time="2025-04-15T17:13:04.165120" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173</msg>
 <arg>http://localhost:5173</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-13T10:13:52.588737" elapsed="0.134215"/>
+<status status="PASS" start="2025-04-15T17:13:04.061120" elapsed="0.104276"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-13T10:13:52.732314" level="INFO">Title: 'Projekti-kirjautuminen'</msg>
+<msg time="2025-04-15T17:13:04.172517" level="INFO">Title: 'Projekti-kirjautuminen'</msg>
 <arg>==</arg>
 <arg>Projekti-kirjautuminen</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-13T10:13:52.722952" elapsed="0.009362"/>
+<status status="PASS" start="2025-04-15T17:13:04.165873" elapsed="0.006863"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-04-13T10:13:52.732314" level="INFO">Types the text 'projektidemo' in the given field.</msg>
+<msg time="2025-04-15T17:13:04.174072" level="INFO">Types the text 'projektidemo' in the given field.</msg>
 <arg>[name="username"]</arg>
 <arg>${MY_USERNAME}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:52.732314" elapsed="1.418367"/>
+<status status="PASS" start="2025-04-15T17:13:04.173226" elapsed="1.431785"/>
 </kw>
 <kw name="Type Secret" owner="Browser">
 <arg>[name="password"]</arg>
@@ -580,48 +580,216 @@ found by ``selector``.</doc>
 <tag>Setter</tag>
 <doc>Types the given secret from ``variable_name`` into the text field
 found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:54.150681" elapsed="1.384580"/>
+<status status="PASS" start="2025-04-15T17:13:05.605610" elapsed="1.415436"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
-<msg time="2025-04-13T10:13:55.537277" level="INFO">Clicks the element 'input.loginform'.</msg>
+<msg time="2025-04-15T17:13:07.022568" level="INFO">Clicks the element 'input.loginform'.</msg>
 <arg>input.loginform</arg>
 <arg>delay=2 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-13T10:13:55.535261" elapsed="2.069330"/>
+<status status="PASS" start="2025-04-15T17:13:07.021655" elapsed="2.042314"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-04-13T10:13:57.769641" level="INFO">Title: 'Projekti-etusivu'</msg>
+<msg time="2025-04-15T17:13:09.491300" level="INFO">Title: 'Projekti-etusivu'</msg>
 <arg>==</arg>
 <arg>Projekti-etusivu</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-04-13T10:13:57.606597" elapsed="0.163044"/>
+<status status="PASS" start="2025-04-15T17:13:09.064680" elapsed="0.426763"/>
 </kw>
-<msg time="2025-04-13T10:13:57.779015" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-15T17:13:09.497121" level="INFO">Set timeout to: 10000</msg>
 <doc>Sisäänkirjautumistesti</doc>
-<status status="PASS" start="2025-04-13T10:13:52.588737" elapsed="5.182912"/>
+<status status="PASS" start="2025-04-15T17:13:04.052676" elapsed="5.439169"/>
 </test>
 <doc>Sisäänkirjautuminen .env- tiedoston avulla</doc>
-<status status="PASS" start="2025-04-13T10:13:52.573858" elapsed="5.208189"/>
+<status status="PASS" start="2025-04-15T17:13:04.029975" elapsed="5.468396"/>
 </suite>
-<status status="PASS" start="2025-04-13T10:13:12.534854" elapsed="45.252216"/>
+<suite id="s1-s5" name="Assignment 6" source="C:\Users\Omistaja\Documents\hyte\sovellustesti\tests\assignment_6.robot">
+<test id="s1-s5-t1" name="Login Test" line="10">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-15T17:13:10.459220" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Omistaja\\Documents\\hyte\\sovellustesti\\outputs\\browser\\traces\\temp\\6505bbbc-a812-4a78-a691-0c1552f12a62"}</msg>
+<msg time="2025-04-15T17:13:10.489708" level="INFO">Starting Browser process C:\Users\Omistaja\Documents\hyte\sovellustesti\.venv\Lib\site-packages\Browser\wrapper\index.js using port 58230</msg>
+<msg time="2025-04-15T17:13:10.489883" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Omistaja\\Documents\\hyte\\sovellustesti\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '58230']</msg>
+<msg time="2025-04-15T17:13:11.228723" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Omistaja\\Documents\\hyte\\sovellustesti\\outputs\\browser\\traces\\temp\\6505bbbc-a812-4a78-a691-0c1552f12a62"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-15T17:13:10.458317" elapsed="0.770691"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-15T17:13:11.422890" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173</msg>
+<msg time="2025-04-15T17:13:11.423026" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-15T17:13:11.229434" elapsed="0.193805"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-04-15T17:13:11.434734" level="INFO">Title: 'Projekti-kirjautuminen'</msg>
+<arg>==</arg>
+<arg>Projekti-kirjautuminen</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-04-15T17:13:11.423730" elapsed="0.011317"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-15T17:13:11.436364" level="INFO">Types the text '***' in the given field.</msg>
+<arg>[name="username"]</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-15T17:13:11.435520" elapsed="1.428554"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>[name="password"]</arg>
+<arg>$Password</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2025-04-15T17:13:12.864661" elapsed="1.417114"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2025-04-15T17:13:14.283853" level="INFO">Clicks the element 'input.loginform'.</msg>
+<arg>input.loginform</arg>
+<arg>delay=2 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-15T17:13:14.282532" elapsed="2.067362"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-04-15T17:13:16.769780" level="INFO">Title: 'Projekti-etusivu'</msg>
+<arg>==</arg>
+<arg>Projekti-etusivu</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-04-15T17:13:16.350735" elapsed="0.419315"/>
+</kw>
+<msg time="2025-04-15T17:13:16.773936" level="INFO">Set timeout to: 10000</msg>
+<doc>Sisäänkirjautumistesti</doc>
+<status status="PASS" start="2025-04-15T17:13:10.455242" elapsed="6.315370"/>
+</test>
+<status status="PASS" start="2025-04-15T17:13:09.502978" elapsed="7.272874"/>
+</suite>
+<suite id="s1-s6" name="Assignment 9 New" source="C:\Users\Omistaja\Documents\hyte\sovellustesti\tests\assignment_9_new.robot">
+<kw name="Create Session" owner="RequestsLibrary" type="SETUP">
+<msg time="2025-04-15T17:13:17.430774" level="INFO">Creating Session using : alias=url, url=http://localhost:3000/api/users, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>url</arg>
+<arg>http://localhost:3000/api/users</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-04-15T17:13:17.430618" elapsed="0.000376"/>
+</kw>
+<test id="s1-s6-t1" name="Post Register Dummy User" line="9">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-15T17:13:17.431928" level="INFO">&amp;{body} = { username=johndoe | password=superSECRETpassword | email=johndoe@example.fi }</msg>
+<var>&amp;{body}</var>
+<arg>username=johndoe</arg>
+<arg>password=superSECRETpassword</arg>
+<arg>email=johndoe@example.fi</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-15T17:13:17.431643" elapsed="0.000319"/>
+</kw>
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2025-04-15T17:13:19.557526" level="INFO">POST Request : url=http://localhost:3000/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '89', 'Content-Type': 'application/json'} 
+ body=b'{"username": "johndoe", "password": "superSECRETpassword", "email": "johndoe@example.fi"}' 
+ </msg>
+<msg time="2025-04-15T17:13:19.557648" level="INFO">POST Response : url=http://localhost:3000/api/users 
+ status=201, reason=Created 
+ headers={'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '28', 'ETag': 'W/"1c-J81cVG8DGuqH/S0W1hw4RlUvFPA"', 'Date': 'Tue, 15 Apr 2025 14:13:19 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body={"message":"User added. 22"} 
+ </msg>
+<msg time="2025-04-15T17:13:19.557783" level="INFO">${resp} = &lt;Response [201]&gt;</msg>
+<var>${resp}</var>
+<arg>url=http://localhost:3000/api/users</arg>
+<arg>json=${body}</arg>
+<arg>expected_status=anything</arg>
+<doc>Sends a POST request.</doc>
+<status status="PASS" start="2025-04-15T17:13:17.432294" elapsed="2.125539"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-15T17:13:19.559149" level="INFO">{'message': 'User added. 22'}</msg>
+<arg>${resp.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-15T17:13:19.558401" elapsed="0.000808"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>201</arg>
+<arg>${resp}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-04-15T17:13:19.559569" elapsed="0.000261"/>
+</kw>
+<status status="PASS" start="2025-04-15T17:13:17.431102" elapsed="2.129122"/>
+</test>
+<test id="s1-s6-t2" name="Login As Dummy User" line="17">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-15T17:13:19.562009" level="INFO">${body} = {'username': 'johndoe', 'password': 'superSECRETpassword'}</msg>
+<var>${body}</var>
+<arg>username=johndoe</arg>
+<arg>password=superSECRETpassword</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-15T17:13:19.561738" elapsed="0.000330"/>
+</kw>
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2025-04-15T17:13:19.647016" level="INFO">POST Request : url=http://127.0.0.1:3000/api/auth/login 
+ path_url=/api/auth/login 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '58', 'Content-Type': 'application/json'} 
+ body=b'{"username": "johndoe", "password": "superSECRETpassword"}' 
+ </msg>
+<msg time="2025-04-15T17:13:19.647115" level="INFO">POST Response : url=http://127.0.0.1:3000/api/auth/login 
+ status=200, reason=OK 
+ headers={'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '471', 'ETag': 'W/"1d7-IQ8sfm+okVaEvQ5PFy4eAF2RdfY"', 'Date': 'Tue, 15 Apr 2025 14:13:19 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body={"message":"login succesful","user":{"user_id":22,"username":"johndoe","email":"johndoe@example.fi","created_at":"2025-04-15T14:13:19.000Z","user_level":"regular"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwidXNlcm5hbWUiOiJqb2huZG9lIiwiZW1haWwiOiJqb2huZG9lQGV4YW1wbGUuZmkiLCJjcmVhdGVkX2F0IjoiMjAyNS0wNC0xNVQxNDoxMzoxOS4wMDBaIiwidXNlcl9sZXZlbCI6InJlZ3VsYXIiLCJpYXQiOjE3NDQ3MjYzOTksImV4cCI6MTc0NDgxMjc5OX0.bZFMTzFHZ7b8-p2SX-6Yl7XeplXPOXGAOoLh0p1UJZ4"} 
+ </msg>
+<msg time="2025-04-15T17:13:19.647249" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>url=http://127.0.0.1:3000/api/auth/login</arg>
+<arg>json=${body}</arg>
+<doc>Sends a POST request.</doc>
+<status status="PASS" start="2025-04-15T17:13:19.562438" elapsed="0.084851"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${response.json()}[message]</arg>
+<arg>login succesful</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-15T17:13:19.647711" elapsed="0.000603"/>
+</kw>
+<status status="PASS" start="2025-04-15T17:13:19.561227" elapsed="0.087441"/>
+</test>
+<status status="PASS" start="2025-04-15T17:13:16.872802" elapsed="2.776950"/>
+</suite>
+<status status="PASS" start="2025-04-15T17:12:24.020837" elapsed="55.630654"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5" id="s1" pass="4" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5</stat>
-<stat name="Assignment 2" id="s1-s1" pass="1" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5.Assignment 2</stat>
-<stat name="Assignment 3" id="s1-s2" pass="1" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5.Assignment 3</stat>
-<stat name="Assignment 4" id="s1-s3" pass="1" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5.Assignment 4</stat>
-<stat name="Assignment 5" id="s1-s4" pass="1" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5.Assignment 5</stat>
+<stat name="Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5 &amp; Assignment 6 &amp; Assignment 9 New" id="s1" pass="7" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5 &amp; Assignment 6 &amp; Assignment 9 New</stat>
+<stat name="Assignment 2" id="s1-s1" pass="1" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5 &amp; Assignment 6 &amp; Assignment 9 New.Assignment 2</stat>
+<stat name="Assignment 3" id="s1-s2" pass="1" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5 &amp; Assignment 6 &amp; Assignment 9 New.Assignment 3</stat>
+<stat name="Assignment 4" id="s1-s3" pass="1" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5 &amp; Assignment 6 &amp; Assignment 9 New.Assignment 4</stat>
+<stat name="Assignment 5" id="s1-s4" pass="1" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5 &amp; Assignment 6 &amp; Assignment 9 New.Assignment 5</stat>
+<stat name="Assignment 6" id="s1-s5" pass="1" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5 &amp; Assignment 6 &amp; Assignment 9 New.Assignment 6</stat>
+<stat name="Assignment 9 New" id="s1-s6" pass="2" fail="0" skip="0">Assignment 2 &amp; Assignment 3 &amp; Assignment 4 &amp; Assignment 5 &amp; Assignment 6 &amp; Assignment 9 New.Assignment 9 New</stat>
 </suite>
 </statistics>
 <errors>
